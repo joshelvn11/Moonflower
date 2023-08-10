@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <title>Document</title>
   </head>
   <body>
@@ -28,24 +29,29 @@
       <a
         id="mobile-nav-btn"
         href="javascript:void(0);"
-        class="icon"
+        class="mobile-nav-icon"
         onclick="myFunction()"
       >
         <i class="fa fa-bars"></i>
       </a>
-    </header>
 
-    <div id="menu-modal">
-      <nav id="mobile-nav" class="paragraph-font font-medium">
-        <a href="" class="">Data</a>
-        <a href="" class="">Statistics</a>
-        <a href="" class="">History</a>
-        <a href="" class="">Facts</a>
-        <a href="" class="">Quiz</a>
-      </nav>
-    </div>
+      <div id="menu-modal" class="glass-container-dark hidden">
+        <nav id="mobile-nav" class="paragraph-font font-medium">
+          <a id="mobile-nav-btn-close" class="mobile-nav-icon" href="">
+            <i class="fa fa-xmark">X</i>
+          </a>
+          <a href="" class="">Data</a>
+          <a href="" class="">Statistics</a>
+          <a href="" class="">History</a>
+          <a href="" class="">Facts</a>
+          <a href="" class="">Quiz</a>
+        </nav>
+      </div>
+    </header>
 
     <section id="hero-section"></section>
     <p>Hello</p>
+
+    <script src="script.js"></script>
   </body>
 </html>

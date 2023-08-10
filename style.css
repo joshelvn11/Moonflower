@@ -86,6 +86,12 @@ body {
   position: relative;
 }
 
+/* ----- General Utility Classes ----- */
+
+.hidden {
+  display: none;
+}
+
 /* ----- Header & Navigation ----- */
 
 header {
@@ -105,25 +111,37 @@ nav > a {
   margin-right: 16px;
 }
 
+.mobile-nav-icon {
+  font-size: 1.4rem;
+  color: var(--primary-font-color);
+}
+
 #mobile-nav-btn {
   display: none;
-  font-size: 1.4rem;
   position: fixed;
   right: 24px;
-  top: 24px;
+  top: 27px;
+}
+
+#mobile-nav-btn-close {
+  text-align: end;
 }
 
 #menu-modal {
-  background-color: red;
-  padding: 12px;
+  padding: 12px 16px 32px 16px;
   position: fixed;
-  width: 80vw;
+  width: 70%;
+  max-width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #mobile-nav > a {
   display: block;
+  position: relative;
   width: 100%;
-  background-color: blue;
+  padding: 12px 0px;
 }
 
 #mobile-nav > a::after {
@@ -133,6 +151,7 @@ nav > a {
   height: 1px;
   bottom: 0;
   left: 0;
+  transform: scaleX(1);
   background-color: var(--primary-font-color);
 }
 
@@ -192,7 +211,7 @@ a:hover {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 1px;
+  height: 0.8px;
   bottom: 0;
   left: 0;
   background-color: var(--primary-font-color);
@@ -203,4 +222,24 @@ a:hover {
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* ----- Glassmorphism Styling ----- */
+/* https://hype4.academy/tools/glassmorphism-generator */
+.glass-container-dark {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(209, 209, 212, 0.05);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-container-medium {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(209, 209, 212, 0.05);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
