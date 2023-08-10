@@ -1,10 +1,176 @@
+/* ----- Custom Font Imports ----- */
+
+@font-face {
+  font-family: Lulo-Clean;
+  src: url(assets/fonts/Lulo-Clean.woff);
+}
+
+@font-face {
+  font-family: Gilmer-Regular;
+  src: url(assets/fonts/Gilmer-Regular.woff);
+}
+
+@font-face {
+  font-family: Gilmer-Medium;
+  src: url(assets/fonts/Gilmer-Medium.woff);
+}
+
+/* ----- Global CSS Variables ----- */
+
+:root {
+  --primary-bg-color: #202020;
+  --primary-font-color: white;
+  --secondary-font-color: whitesmoke;
+  --display-font: Lulo-Clean;
+  --heading-font: Gilmer-Medium;
+  --paragraph-font: Gilmer-Regular;
+}
+
+/* ----- Scroll Bar Styling ----- */
+
+body::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--primary-bg-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-font-color); /* color of the scroll thumb */
+  border-radius: 30px; /* roundness of the scroll thumb */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-font-color) var(--primary-bg-color);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-bg-color);
+  border-radius: 20px;
+  border: none;
+}
+
+/* ----- Font Related Classes ----- */
+.display-font {
+  font-family: var(--display-font);
+}
+
+.paragraph-font {
+  font-family: var(--paragraph-font);
+}
+
+.font-medium {
+  font-size: 1.2rem;
+}
+
+/* ----- Element Styling ----- */
+
+body {
+  color: var(--primary-font-color);
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  font-family: Gilmer-Regular Verdana sans-serif;
+  position: relative;
+}
+
+/* ----- Header & Navigation ----- */
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#desktop-nav {
+  position: fixed;
+  right: 12px;
+}
+
+nav > a {
+  margin-right: 16px;
+}
+
+#mobile-nav-btn {
+  display: none;
+  font-size: 1.4rem;
+  position: fixed;
+  right: 24px;
+  top: 24px;
+}
+
+#menu-modal {
+  background-color: red;
+  padding: 12px;
+  position: fixed;
+  width: 80vw;
+}
+
+#mobile-nav > a {
+  display: block;
+  width: 100%;
+  background-color: blue;
+}
+
+#mobile-nav > a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-font-color);
+}
+
+@media screen and (max-width: 992px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #mobile-nav-btn {
+    display: block;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-font-color);
+}
+
+a:hover {
+  color: var(--primary-font-color);
+}
+
+#background-section {
+  background-color: var(--primary-bg-color);
+  /*background-image: url(assets/media/images/stars-background-2.jpg);*/
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+
+#hero-section {
+  height: 300vh;
+}
+
 .fullscreen-section {
   height: 100vh;
   width: 100%;
-}
-
-.red-background {
-  background-color: red;
 }
 
 .fullscreen-section > h1 {
@@ -12,7 +178,29 @@
   padding: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+/* ----- Hover Underline Animation ----- */
+/* source: https://www.30secondsofcode.org/css/s/hover-underline-animation/ */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--primary-font-color);
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-font-color);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

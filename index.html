@@ -4,14 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
+    <div id="background-section" class="fullscreen-section"></div>
     <header>
-      <div class="fullscreen-section red-background">
-        <h1>Hello There</h1>
-      </div>
+      <h1 class="display-font font-medium">MOONFLOWER</h1>
+
+      <!-- Desktop Navigation -->
+      <nav id="desktop-nav" class="paragraph-font font-medium">
+        <a href="" class="hover-underline-animation">Data</a>
+        <a href="" class="hover-underline-animation">Statistics</a>
+        <a href="" class="hover-underline-animation">History</a>
+        <a href="" class="hover-underline-animation">Facts</a>
+        <a href="" class="hover-underline-animation">Quiz</a>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <a
+        id="mobile-nav-btn"
+        href="javascript:void(0);"
+        class="icon"
+        onclick="myFunction()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
     </header>
+
+    <div id="menu-modal">
+      <nav id="mobile-nav" class="paragraph-font font-medium">
+        <a href="" class="">Data</a>
+        <a href="" class="">Statistics</a>
+        <a href="" class="">History</a>
+        <a href="" class="">Facts</a>
+        <a href="" class="">Quiz</a>
+      </nav>
+    </div>
+
+    <section id="hero-section"></section>
     <p>Hello</p>
   </body>
 </html>
