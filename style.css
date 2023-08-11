@@ -223,8 +223,25 @@ a:hover {
   /*background-image: url(assets/media/images/stars-background-2.jpg);*/
   background-size: cover;
   position: fixed;
+  z-index: -2;
+  top: 0;
+}
+
+#particles-js {
+  background-color: rgba(0, 0, 0, 0);
+  /*background-image: url(assets/media/images/stars-background-2.jpg);*/
+  background-size: cover;
+  position: fixed;
   z-index: -1;
   top: 0;
+}
+
+/* ---- Entry Modal ----- */
+
+#entry-modal {
+  position: fixed;
+  background-color: var(--primary-bg-color);
+  z-index: 999;
 }
 
 /* ------ Hero Section ----- */

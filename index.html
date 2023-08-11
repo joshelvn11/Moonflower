@@ -16,6 +16,45 @@
   </head>
   <body>
     <div id="background-section" class="fullscreen-section"></div>
+    <div id="particles-js" class="fullscreen-section"></div>
+    <audio
+      loop
+      src="/assets/audio/background-audio-compressed.mp3"
+      id="background-audio"
+    ></audio>
+
+    <section id="entry-modal" class="fullscreen-section">
+      <div id="entry-modal-heading-wrapper">
+        <h1>Welcome</h1>
+        <p>
+          Welcome to Moonflower, a site where you can explore everything about
+          the Moon.
+        </p>
+        <div id="entry-modal-form-wrapper">
+          <p>Choose how you would like to customise your experience</p>
+
+          <input type="checkbox" name="enable-audio" id="enable-audio" />
+          <label for="enable-audio">Enable Audio</label>
+
+          <input
+            type="checkbox"
+            name="enable-particles"
+            id="enable-particles"
+          />
+          <label for="enable-particles">Enable Particles</label>
+
+          <input
+            type="checkbox"
+            name="enable-high-contrast"
+            id="enable-high-contrast"
+          />
+          <label for="enable-high-contrast">Enable High Contrast Mode</label>
+
+          <button id="enter-site-button">Enter Site</button>
+        </div>
+      </div>
+    </section>
+
     <header>
       <h1 class="display-font font-medium">MOONFLOWER</h1>
 
@@ -66,6 +105,9 @@
 
     <section class="fullscreen-section"></section>
 
+    <!-- Import Particles.js and app.js files -->
+    <script src="assets/scripts/particles.js-master/particles.js"></script>
+    <script src="assets/scripts/particles.js-master/demo/js/app.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
