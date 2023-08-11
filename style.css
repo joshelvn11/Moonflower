@@ -15,6 +15,11 @@
   src: url(assets/fonts/Gilmer-Medium.woff);
 }
 
+@font-face {
+  font-family: Gilmer-Light;
+  src: url(assets/fonts/Gilmer-Light.woff);
+}
+
 /* ----- Global CSS Variables ----- */
 
 :root {
@@ -24,6 +29,7 @@
   --display-font: Lulo-Clean;
   --heading-font: Gilmer-Medium;
   --paragraph-font: Gilmer-Regular;
+  --paragraph-font-light: Gilmer-Light;
 }
 
 /* ----- Scroll Bar Styling ----- */
@@ -71,6 +77,10 @@ body::-webkit-scrollbar-thumb {
   font-family: var(--paragraph-font);
 }
 
+.paragraph-font-light {
+  font-family: var(--paragraph-font-light);
+}
+
 .font-medium {
   font-size: 1.2rem;
 }
@@ -92,14 +102,24 @@ body {
   display: none;
 }
 
+.fullscreen-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
 /* ----- Header & Navigation ----- */
 
 header {
   position: relative;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
 }
 
 #desktop-nav {
@@ -130,6 +150,7 @@ nav > a {
 #menu-modal {
   padding: 12px 16px 32px 16px;
   position: fixed;
+  z-index: 99;
   width: 70%;
   max-width: 500px;
   top: 50%;
@@ -165,6 +186,15 @@ nav > a {
   }
 }
 
+#modal-overlay {
+  position: fixed;
+  z-index: 98;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(14px);
+}
+
 a {
   text-decoration: none;
   color: var(--secondary-font-color);
@@ -183,18 +213,51 @@ a:hover {
   top: 0;
 }
 
+/* ------ Hero Section ----- */
+
 #hero-section {
-  height: 300vh;
 }
 
-.fullscreen-section {
-  height: 100vh;
+#hero-text-container {
+  position: sticky;
+  top: 0px;
+  margin-top: -70px;
+}
+
+#hero-text-wrapper {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hero-text-wrapper > h1 {
+  text-align: center;
+  width: 100%;
+  margin: -32px 0px;
+  padding: 0px;
+}
+
+#hero-text-large {
+  width: 100%;
+  font-size: 220px;
+}
+
+#hero-text-medium {
+  width: 100%;
+  font-size: 72px;
+}
+
+#hero-image-wrapper {
+  position: relative;
+  z-index: 2;
   width: 100%;
 }
 
-.fullscreen-section > h1 {
-  margin: 0;
-  padding: 0;
+#hero-image {
+  width: 100%;
 }
 
 /* ----- Hover Underline Animation ----- */
