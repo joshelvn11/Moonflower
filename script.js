@@ -12,6 +12,11 @@ btnOpenModal.addEventListener("click", () => {
   modalOverlay.classList.remove("hidden");
 });
 
+btnCloseModal.addEventListener("click", () => {
+  modal.classList.add("hidden");
+  modalOverlay.classList.add("hidden");
+});
+
 modalOverlay.addEventListener("click", () => {
   modal.classList.add("hidden");
   modalOverlay.classList.add("hidden");

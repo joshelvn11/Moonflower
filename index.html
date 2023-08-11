@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
 
     <title>Document</title>
   </head>
@@ -26,20 +30,18 @@
       </nav>
 
       <!-- Mobile Navigation -->
-      <a
-        id="mobile-nav-btn"
-        href="javascript:void(0);"
-        class="mobile-nav-icon"
-        onclick="myFunction()"
-      >
-        <i class="fa fa-bars"></i>
-      </a>
+      <button id="mobile-nav-btn" class="transparent-button font-medium">
+        <span class="fa fa-bars"></span>
+      </button>
 
       <div id="menu-modal" class="glass-container-dark hidden">
         <nav id="mobile-nav" class="paragraph-font font-medium">
-          <a id="mobile-nav-btn-close" class="mobile-nav-icon" href="">
-            <i class="fa fa-xmark">X</i>
-          </a>
+          <button
+            id="mobile-nav-btn-close"
+            class="transparent-button font-medium"
+          >
+            <span class="fa fa-times"></span>
+          </button>
           <a href="" class="">Data</a>
           <a href="" class="">Statistics</a>
           <a href="" class="">History</a>

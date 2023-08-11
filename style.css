@@ -108,6 +108,12 @@ body {
   position: relative;
 }
 
+.transparent-button {
+  background-color: rgba(209, 209, 212, 0);
+  border: none;
+  color: var(--primary-font-color);
+}
+
 /* ----- Header & Navigation ----- */
 
 header {
@@ -144,7 +150,7 @@ nav > a {
 }
 
 #mobile-nav-btn-close {
-  text-align: end;
+  justify-self: end;
 }
 
 #menu-modal {
@@ -156,6 +162,11 @@ nav > a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#mobile-nav {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #mobile-nav > a {
