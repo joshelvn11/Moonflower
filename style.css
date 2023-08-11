@@ -176,6 +176,7 @@ nav > a {
   background-color: var(--primary-font-color);
 }
 
+/* Phone Screens */
 @media screen and (max-width: 992px) {
   #desktop-nav {
     display: none;
@@ -192,7 +193,9 @@ nav > a {
   top: 0px;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(14px);
+  margin-left: -20px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(30, 30, 30, 0.6);
 }
 
 a {
@@ -248,6 +251,82 @@ a:hover {
 #hero-text-medium {
   width: 100%;
   font-size: 72px;
+}
+
+/* Phone Screens */
+@media screen and (max-width: 992px) {
+  #hero-text-large {
+    font-size: 150px;
+  }
+
+  #hero-text-medium {
+    font-size: 52px;
+  }
+
+  #hero-text-wrapper > h1 {
+    margin: -28px 0px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  #hero-text-large {
+    font-size: 120px;
+  }
+
+  #hero-text-medium {
+    font-size: 42px;
+  }
+
+  #hero-text-wrapper > h1 {
+    margin: -28px 0px;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  #hero-text-large {
+    font-size: 82px;
+  }
+
+  #hero-text-medium {
+    font-size: 32px;
+  }
+
+  #hero-text-wrapper > h1 {
+    margin: -20px 0px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #hero-text-large {
+    font-size: 68px;
+  }
+
+  #hero-text-medium {
+    font-size: 24px;
+  }
+
+  #hero-text-wrapper > h1 {
+    margin: -16px 0px;
+  }
+
+  #hero-image-wrapper {
+    margin-top: -200px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  #hero-text-large {
+    font-size: 52px;
+  }
+
+  #hero-text-medium {
+    font-size: 18px;
+  }
+
+  #hero-text-wrapper > h1 {
+    margin: -8px 0px;
+  }
 }
 
 #hero-image-wrapper {
