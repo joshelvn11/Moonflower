@@ -21,10 +21,20 @@ The Moonflower site has multimedia elements to make user experience more interes
 
 ### 1. Real Time Information Section
 
+This section features current data about the Moon such as it's cycle day, current phase, astrological sign, etc. Currently this is updated manually daily but in future will fetch data in real time from an API.
+
 ### 2. Data & Statistics Section
+
+This section is all about constant data about the Moon such as mass, orbit, geology, etc. The different categories of data are broken up and each display in their own accordian widget to decrease the overall room taken up by this area making the information less overwhelming and easier to find what you are looking for.
 
 ### 3. History & Timeline Section
 
+This section features majors historical events surrounding the Moon broken down by year. The data is displayed along a vertical timeline arranging events in chronological order, each event having their own title, description and possible images. Each section is collapsable to make the information more compact and allowing the user to expand on each event if they are interested.
+
 ### 4. Interesting Info (Facts) Section
 
+This sections features miscelleanous interesting facts / information about the Moon. It displayed in a slide format allowing users to slide through one piece of information at a time, again making information more digestable and not too overwhelming. This format again allows users to optionally engage as engagement happens along a different dimensional axis.
+
 ### 5. Quiz Section
+
+The final section is a quiz on the Moon, its history, mythology, and science. The quiz uses HTML forms with a variety of different input types to mix up the question format and make it more engaging.
