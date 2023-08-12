@@ -38,3 +38,10 @@ This sections features miscelleanous interesting facts / information about the M
 ### 5. Quiz Section
 
 The final section is a quiz on the Moon, its history, mythology, and science. The quiz uses HTML forms with a variety of different input types to mix up the question format and make it more engaging.
+
+## Credits
+
+### particle.js
+
+https://github.com/VincentGarreau/particles.js
+https://www.geeksforgeeks.org/how-to-use-particle-js-in-javascript-project/

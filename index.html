@@ -14,7 +14,7 @@
     />
     <title>Moonflower</title>
   </head>
-  <body>
+  <body id="body" class="overflow-hidden">
     <div id="background-section" class="fullscreen-section"></div>
     <div id="particles-js" class="fullscreen-section"></div>
     <audio
@@ -23,34 +23,40 @@
       id="background-audio"
     ></audio>
 
-    <section id="entry-modal" class="fullscreen-section">
-      <div id="entry-modal-heading-wrapper">
-        <h1>Welcome</h1>
-        <p>
-          Welcome to Moonflower, a site where you can explore everything about
-          the Moon.
-        </p>
-        <div id="entry-modal-form-wrapper">
-          <p>Choose how you would like to customise your experience</p>
+    <section
+      id="entry-modal"
+      class="fullscreen-section paragraph-font align-center"
+    >
+      <div id="entry-modal-content-wrapper">
+        <div id="entry-modal-heading-wrapper">
+          <h1 class="font-x-large display-font">Welcome</h1>
+          <p>
+            Welcome to Moonflower, a site where you can explore everything about
+            the Moon.
+          </p>
+          <div id="entry-modal-form-wrapper">
+            <p>Choose how you would like to customise your experience</p>
 
-          <input type="checkbox" name="enable-audio" id="enable-audio" />
-          <label for="enable-audio">Enable Audio</label>
+            <input type="checkbox" name="enable-audio" id="enable-audio" />
+            <label for="enable-audio">Enable Audio</label>
 
-          <input
-            type="checkbox"
-            name="enable-particles"
-            id="enable-particles"
-          />
-          <label for="enable-particles">Enable Particles</label>
+            <input
+              type="checkbox"
+              name="enable-particles"
+              id="enable-particles"
+            />
+            <label for="enable-particles">Enable Particles</label>
 
-          <input
-            type="checkbox"
-            name="enable-high-contrast"
-            id="enable-high-contrast"
-          />
-          <label for="enable-high-contrast">Enable High Contrast Mode</label>
-
-          <button id="enter-site-button">Enter Site</button>
+            <input
+              type="checkbox"
+              name="enable-high-contrast"
+              id="enable-high-contrast"
+            />
+            <label for="enable-high-contrast">Enable High Contrast Mode</label>
+          </div>
+          <div id="buttons-wrapper">
+            <button id="enter-site-button" class="button">Enter Site</button>
+          </div>
         </div>
       </div>
     </section>

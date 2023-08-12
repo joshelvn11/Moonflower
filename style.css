@@ -25,7 +25,7 @@
 :root {
   --primary-bg-color: #202020;
   --primary-font-color: white;
-  --secondary-font-color: whitesmoke;
+  --secondary-font-color: rgb(206, 206, 206);
   --display-font: Lulo-Clean;
   --heading-font: Gilmer-Medium;
   --paragraph-font: Gilmer-Regular;
@@ -81,8 +81,24 @@ body::-webkit-scrollbar-thumb {
   font-family: var(--paragraph-font-light);
 }
 
+.font-small {
+  font-size: 0.8rem;
+}
+
+.font-paragraph {
+  font-size: 1rem;
+}
+
 .font-medium {
   font-size: 1.2rem;
+}
+
+.font-large {
+  font-size: 3rem;
+}
+
+.font-x-large {
+  font-size: 4rem;
 }
 
 /* ----- Element Styling ----- */
@@ -112,6 +128,32 @@ body {
   background-color: rgba(209, 209, 212, 0);
   border: none;
   color: var(--primary-font-color);
+}
+
+.block {
+  display: block;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* ----- Buttons ----- */
+.button {
+  background-color: var(--primary-font-color);
+  color: var(--primary-bg-color);
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-family: var(--paragraph-font);
+}
+
+.button:hover {
+  background-color: var(--secondary-font-color);
 }
 
 /* ----- Header & Navigation ----- */
@@ -242,6 +284,18 @@ a:hover {
   position: fixed;
   background-color: var(--primary-bg-color);
   z-index: 999;
+  padding: 50px 24px;
+}
+
+#entry-modal-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#entry-modal-form-wrapper {
+  margin: 42px 0px;
 }
 
 /* ------ Hero Section ----- */

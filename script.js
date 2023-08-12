@@ -26,6 +26,7 @@ modalOverlay.addEventListener("click", () => {
 
 /* ----- Entry Options Modal ---- */
 
+const body = document.getElementById("body");
 const entryModal = document.getElementById("entry-modal");
 const backgroundAudio = document.getElementById("background-audio");
 const enableAudio = document.getElementById("enable-audio");
@@ -43,5 +44,6 @@ enterSiteBtn.addEventListener("click", () => {
     particles.classList.add("hidden");
   }
 
+  document.body.classList.remove("overflow-hidden");
   entryModal.classList.add("hidden");
 });
