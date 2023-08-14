@@ -23,6 +23,8 @@
       id="background-audio"
     ></audio>
 
+    <!---------- Entry Modal ------------>
+
     <section
       id="entry-modal"
       class="fullscreen-section paragraph-font align-center"
@@ -61,12 +63,14 @@
       </div>
     </section>
 
+    <!---------- Header ------------>
+
     <header>
       <h1 class="display-font font-medium">MOONFLOWER</h1>
 
       <!-- Desktop Navigation -->
       <nav id="desktop-nav" class="paragraph-font font-medium">
-        <a href="" class="hover-underline-animation">Data</a>
+        <a href="#data-section" class="hover-underline-animation">Data</a>
         <a href="" class="hover-underline-animation">Statistics</a>
         <a href="" class="hover-underline-animation">History</a>
         <a href="" class="hover-underline-animation">Facts</a>
@@ -78,7 +82,7 @@
         <span class="fa fa-bars"></span>
       </button>
 
-      <div id="menu-modal" class="glass-container-dark hidden">
+      <div id="menu-modal" class="glass-container-medium hidden">
         <nav id="mobile-nav" class="paragraph-font font-medium">
           <button
             id="mobile-nav-btn-close"
@@ -97,6 +101,8 @@
       <div id="modal-overlay" class="hidden"></div>
     </header>
 
+    <!---------- Hero Section ------------>
+
     <section id="hero-section">
       <div id="hero-text-container" class="fullscreen-section">
         <div id="hero-text-wrapper">
@@ -109,7 +115,78 @@
       </div>
     </section>
 
-    <section class="fullscreen-section"></section>
+    <!---------- Intro Section ------------>
+
+    <section class="fullscreen-section flex-center">
+      <div class="section-content-wrapper">
+        <p class="paragraph-font font-paragraph">
+          The Moon, Earth's only natural satellite, has captivated humanity for
+          millennia with its mesmerizing beauty and profound mysteries. Located
+          approximately 384,400 kilometers away, the Moon exerts a significant
+          influence on our planet, shaping its tides and providing a source of
+          inspiration, myth, and scientific wonder. <br />
+          <br />
+          Its formation remains a subject of ongoing debate, but the most widely
+          accepted theory suggests that the Moon emerged around 4.5 billion
+          years ago from the debris created by a massive collision between a
+          Mars-sized body and the early Earth. This cosmic impact led to the
+          ejection of molten material into space, eventually coalescing into the
+          Moon.
+        </p>
+      </div>
+    </section>
+
+    <!---------- Data Section ------------>
+
+    <section class="fullscreen-section flex-center" id="data-section">
+      <div class="section-content-wrapper">
+        <h1 class="display-font font-large">Real Time Data</h1>
+        <div id="data-cards-grid">
+          <div class="data-card data-card-large glass-container-medium">
+            <h3 class="paragraph-font font-paragraph">Astrological Sign</h3>
+            <img
+              class="data-card-symbol"
+              src="assets/media/star-sign-symbols/aries.png"
+            />
+            <p class="display-font font-medium">Aries</p>
+          </div>
+
+          <div class="data-card data-card-large glass-container-medium">
+            <h3 class="paragraph-font font-paragraph">Current Phase</h3>
+            <img
+              class="data-card-symbol"
+              src="assets/media/moon-phases/full-moon.png"
+            />
+            <p class="display-font font-medium">Full Moon</p>
+          </div>
+
+          <div class="data-card data-card-small glass-container-medium">
+            <h3 class="paragraph-font font-paragraph">Full Moon</h3>
+            <p class="display-font font-medium">12 Sep</p>
+          </div>
+          <div class="data-card data-card-small glass-container-medium">
+            <h3 class="paragraph-font font-paragraph">New Moon</h3>
+            <p class="display-font font-medium">8 Aug</p>
+          </div>
+          <div class="data-card data-card-long glass-container-medium">
+            <h3 class="paragraph-font font-paragraph">Distance from Earth</h3>
+            <p class="display-font font-medium">356 000 km</p>
+          </div>
+          <div class="data-card data-card-small glass-container-medium">
+            <h3 class="paragraph-font font-paragraph">Altitude</h3>
+            <p class="display-font font-medium">27.02°</p>
+          </div>
+          <div class="data-card data-card-small glass-container-medium">
+            <h3 class="paragraph-font font-paragraph">Altitude</h3>
+            <p class="display-font font-medium">27.02°</p>
+          </div>
+          <div class="data-card data-card-small glass-container-medium">
+            <h3 class="paragraph-font font-paragraph">Altitude</h3>
+            <p class="display-font font-medium">27.02°</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Import Particles.js and app.js files -->
     <script src="assets/scripts/particles.js-master/particles.js"></script>
