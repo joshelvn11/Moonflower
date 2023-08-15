@@ -47,3 +47,15 @@ enterSiteBtn.addEventListener("click", () => {
   document.body.classList.remove("overflow-hidden");
   entryModal.classList.add("hidden");
 });
+
+/* ----- Accordian ---- */
+
+let accordianBtns = document.getElementsByClassName("accordian-button");
+
+for (let i = 0; i < accordianBtns.length; i++) {
+  accordianBtns[i].addEventListener("click", () => {
+    accordianBtns[i].nextElementSibling.classList.toggle("hidden");
+    accordianBtns[i].firstElementChild.classList.toggle("fa-plus");
+    accordianBtns[i].firstElementChild.classList.toggle("fa-minus");
+  });
+}
