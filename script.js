@@ -1,5 +1,12 @@
 "use strict";
 
+/* ----- Preloader ---- */
+let preloader = document.getElementById("preloader");
+
+window.addEventListener("load", function () {
+  preloader.classList.add("hidden");
+});
+
 /* ----- Mobile Menu Modal ---- */
 
 const modal = document.getElementById("menu-modal");
