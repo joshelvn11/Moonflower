@@ -190,6 +190,10 @@ label {
   }
 }
 
+.gap-6 {
+  gap: 6px;
+}
+
 /* ----- Buttons ----- */
 .button {
   background-color: var(--primary-font-color);
@@ -237,6 +241,14 @@ header {
   height: 50px;
   min-height: 50px;
   max-height: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
 }
 
 #desktop-nav {
