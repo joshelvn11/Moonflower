@@ -166,12 +166,6 @@ label {
   align-items: center;
 }
 
-.transparent-button {
-  background-color: rgba(209, 209, 212, 0);
-  border: none;
-  color: var(--primary-font-color);
-}
-
 .block {
   display: block;
 }
@@ -200,14 +194,35 @@ label {
 .button {
   background-color: var(--primary-font-color);
   color: var(--primary-bg-color);
-  border: none;
-  padding: 8px 16px;
+  border: solid 1px var(--primary-font-color);
+  padding: 6px 24px;
   font-size: 1rem;
   font-family: var(--paragraph-font);
 }
 
 .button:hover {
   background-color: var(--secondary-font-color);
+}
+
+.border-button {
+  color: var(--primary-font-color);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.transparent-button {
+  background-color: rgba(209, 209, 212, 0);
+  border: none;
+  color: var(--primary-font-color);
+}
+
+/* ----- Forms ----- */
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  background-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  color: var(--primary-font-color);
 }
 
 /* ----- Header & Navigation ----- */
@@ -746,18 +761,30 @@ tr {
 
 /* ----- Quiz Section ----- */
 #quiz-form {
-  width: 100%;
-  height: 500px;
+  width: 600px;
+  max-width: 70vw;
+  padding: 24px 42px;
 }
 
-#quiz-form > label {
+.question-option-wrapper {
+  display: inline-block;
+}
+
+@media screen and (max-width: 622px) {
+  .question-option-wrapper {
+    display: block;
+    margin-bottom: 6px;
+  }
+}
+
+.quiz-question {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 12px;
 }
 
-input[type="text"] {
-  background-color: transparent;
-  border-width: 0px 0px 1px 0px;
-  color: var(--primary-font-color);
+.question-buttons-wrapper {
+  margin-top: 18px;
 }
 
 /* ----- Glassmorphism Styling ----- */

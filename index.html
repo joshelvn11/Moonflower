@@ -593,13 +593,13 @@
 
   <!---------- Quiz Section ------------>
 
-  <section class="flex-center">
+  <section class="flex-center" id="quiz-section">
     <div class="section-content-wrapper">
       <h1 class="display-font font-large">Take the quiz</h1>
-      <form class="glass-container-medium" action="https://formdump.codeinstitute.net" method="POST" id="quiz-form">
-        <fieldset>
-          <legend class="paragraph-font font-large"></legend>
-          <label for="question-one" class="paragraph-font font-medium">1. Who is the Greek God of the Moon?</label>
+      <form class="glass-container-medium" action="https://formdump.codeinstitute.net" method="POST" id="quiz-form" target="_blank">
+        
+          <!---------- Question 1 ------------>
+          <label for="question-one" class="paragraph-font font-medium quiz-question">1. Who is the Greek God of the Moon?</label>
           <input type="text" name="question-one" id="question-one" list="question-one-datalist" class="paragraph-font font-paragraph">
           <datalist id="question-one-datalist">
             <option value="selene">Selene</option>
@@ -608,9 +608,62 @@
             <option value="gaia">Gaia</option>
             <option value="Asclepius">Asclepius</option>
           </datalist>
-          <label for="question-two" class="paragraph-font font-medium">1. Who is the Egyptian God of the Moon</label>
-          <input type="checkbox" name="question-two" value="Ra" id="question-two-op-one" class="paragraph-font font-paragraph">
-        </fieldset>
+
+          <!---------- Question 2 ------------>
+          <label for="question-two" class="paragraph-font font-medium quiz-question">2. Who is the Egyptian God of the Moon?</label>
+          <div class="question-option-wrapper">
+            <input type="radio" name="question-two" value="Ra" id="question-two-op-one" class="paragraph-font font-paragraph">
+            <label for="question-two-op-one" class="paragraph-font font-paragraph">Ra</label>
+          </div>
+          <div class="question-option-wrapper">
+            <input type="radio" name="question-two" value="Isis" id="question-two-op-two" class="paragraph-font font-paragraph">
+            <label for="question-two-op-two" class="paragraph-font font-paragraph">Isis</label>
+          </div>
+          <div class="question-option-wrapper">
+            <input type="radio" name="question-two" value="Khonsu" id="question-two-op-thre" class="paragraph-font font-paragraph">
+            <label for="question-two-op-three" class="paragraph-font font-paragraph">Khonsu</label>
+          </div>
+     
+          <!---------- Question 3 ------------>
+          <label for="question-three" class="paragraph-font font-medium quiz-question">3. Which of the following Apollo missions landed astronauts on the Moon?</label>
+          <div class="question-option-wrapper">
+            <input type="checkbox" name="question-three" value="Apollo 7" id="question-three-op-one" class="paragraph-font font-paragraph">
+            <label for="question-three-op-one" class="paragraph-font font-paragraph">Apollo 7</label>
+          </div>
+          <div class="question-option-wrapper">
+            <input type="checkbox" name="question-three" value="Apollo 9" id="question-three-op-two" class="paragraph-font font-paragraph">
+            <label for="question-three-op-two" class="paragraph-font font-paragraph">Apollo 9</label>
+          </div>
+          <div class="question-option-wrapper">
+            <input type="checkbox" name="question-three" value="Apollo 11" id="question-three-op-three" class="paragraph-font font-paragraph">
+            <label for="question-three-op-three" class="paragraph-font font-paragraph">Apollo 11</label>
+          </div>
+          <div class="question-option-wrapper">
+            <input type="checkbox" name="question-three" value="Apollo 14" id="question-three-op-four" class="paragraph-font font-paragraph">
+            <label for="question-three-op-four" class="paragraph-font font-paragraph">Apollo 14</label>
+          </div>
+     
+          <!---------- Question 4 ------------>
+          <label for="question-four" class="paragraph-font font-medium quiz-question">4. On what date was the first Moon landing?</label>
+          <input type="date" name="question-four" id="question-four" class="paragraph-font font-paragraph">
+
+          <!---------- Email Question ------------>
+          <label for="question-email" class="paragraph-font font-medium quiz-question">Enter your email to get your results</label>
+          <input type="email" name="question-email" id="question-email" class="paragraph-font font-paragraph" required>
+
+          <!---------- Newsletter Question ------------>
+            <div class="question-option-wrapper quiz-question">
+              <input type="checkbox" name="question-subscribe" value="subscribe" id="question-subscribe" class="paragraph-font font-paragraph">
+              <label for="question-subscribe" class="paragraph-font font-paragraph">Subscribe to our newsletter</label>
+            </div>
+          
+          <!---------- Buttons ------------>
+          <div class="question-buttons-wrapper">
+            <button class="button" type="submit">Submit</button>
+            <button class="button border-button" type="reset">Reset</button>
+          </div>
+
+          
       </form>
     </div>
   </section>
