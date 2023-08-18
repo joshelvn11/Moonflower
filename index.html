@@ -37,19 +37,22 @@
             Welcome to Moonflower, a site where you can explore everything about
             the Moon.
           </p>
+          <p>Choose how you would like to customise your experience.
+            <br><br>
+            You can change these options at any time via the navigation menu.
+          </p>
+
           <div id="entry-modal-form-wrapper">
-            <p>Choose how you would like to customise your experience</p>
 
-            <input type="checkbox" name="enable-audio" id="enable-audio" checked/>
-            <label for="enable-audio">Enable Audio</label>
+            <div class="entry-modal-option-wrapper">
+              <input type="checkbox" name="enable-audio" id="enable-audio" checked/>
+              <label for="enable-audio">Enable Audio</label>
+            </div>
 
-            <input
-              type="checkbox"
-              name="enable-particles"
-              id="enable-particles"
-              checked
-            />
-            <label for="enable-particles">Enable Particles</label>
+            <div class="entry-modal-option-wrapper">
+              <input type="checkbox" name="enable-particles" id="enable-particles" checke />
+              <label for="enable-particles">Enable Particles</label>
+            </div>
           </div>
           <div id="buttons-wrapper">
             <button id="enter-site-button" class="button">Enter Site</button>
@@ -57,7 +60,7 @@
         </div>
       </div>
     </section>
-
+    
     <!---------- Header ------------>
 
     <header>
@@ -72,6 +75,16 @@
         <a href="#history-section" class="hover-underline-animation">History</a>
         <a href="#info-section" class="hover-underline-animation">Facts</a>
         <a href="#quiz-section" class="hover-underline-animation">Quiz</a>
+        <label for="auido-control">Sound</label>
+        <label class="switch">
+          <input type="checkbox" class="audio-control" id="audio-control">
+          <span class="slider round"></span>
+        </label>
+        <label for="particle-control" id="particles-control-label">Particles</label>
+        <label class="switch">
+          <input type="checkbox" class="particle-control" id="particle-control">
+          <span class="slider round"></span>
+        </label>
       </nav>
 
       <!-- Mobile Navigation -->
@@ -79,19 +92,30 @@
         <span class="fa fa-bars"></span>
       </button>
 
-      <div id="menu-modal" class="glass-container-medium hidden">
+      <div id="menu-modal" class="hidden">
+        <button id="mobile-nav-btn-close" class="transparent-button font-medium">
+          <span class="fa fa-times"></span>
+        </button>
         <nav id="mobile-nav" class="paragraph-font font-medium">
-          <button
-            id="mobile-nav-btn-close"
-            class="transparent-button font-medium"
-          >
-            <span class="fa fa-times"></span>
-          </button>
-          <a href="#data-section" class="">Data</a>
-          <a href="#statistics-section" class="">Statistics</a>
-          <a href="#history-section" class="">History</a>
-          <a href="#info-section" class="">Facts</a>
-          <a href="#quiz-section" class="">Quiz</a>
+          <a href="#data-section" class="mobile-nav-link">Data</a>
+          <a href="#statistics-section" class="mobile-nav-link">Statistics</a>
+          <a href="#history-section" class="mobile-nav-link">History</a>
+          <a href="#info-section" class="mobile-nav-link">Facts</a>
+          <a href="#quiz-section" class="mobile-nav-link">Quiz</a>
+          <div class="mobile-control-wrapper">
+          <label for="auido-control">Sound</label>
+          <label class="switch">
+            <input type="checkbox" class="audio-control" id="audio-control">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="mobile-control-wrapper">
+          <label for="particle-control">Particles</label>
+          <label class="switch">
+            <input type="checkbox" class="particle-control" id="particle-control">
+            <span class="slider round"></span>
+          </label>
+        </div>
         </nav>
       </div>
 
@@ -628,11 +652,15 @@
             <p class="paragraph-font font-paragraph">“The prevailing idea is that the Moon was formed in a violent event between the proto-Earth – an early-stage Earth that was much bigger than it is today – and an object (labelled ‘Theia’) about the size of Mars,” explains Robert Massey, deputy executive director of the Royal Astronomical Society. “Debris was ejected into space and then coalesced to form the Moon.” Modern research seems to confirm the Moon is made of material from the early Earth’s crust. Dubbed the ‘Giant Impact Hypothesis,’ this collision is believed to have happened 4.5 billion years ago and would have been 100 million times larger than the event which wiped out the dinosaurs.</p>
           </div>
           <div class="gallery-cell">
-            <h2 class="paragraph-font font-medium">The Moon began with an explosive collision</h2>
-            <p class="paragraph-font font-paragraph">“The prevailing idea is that the Moon was formed in a violent event between the proto-Earth – an early-stage Earth that was much bigger than it is today – and an object (labelled ‘Theia’) about the size of Mars,” explains Robert Massey, deputy executive director of the Royal Astronomical Society. “Debris was ejected into space and then coalesced to form the Moon.” Modern research seems to confirm the Moon is made of material from the early Earth’s crust. Dubbed the ‘Giant Impact Hypothesis,’ this collision is believed to have happened 4.5 billion years ago and would have been 100 million times larger than the event which wiped out the dinosaurs.</p>
+            <h2 class="paragraph-font font-medium">The Moon is drifting away</h2>
+            <p class="paragraph-font font-paragraph">The Moon is engaged in a subtle dance with our planet that goes largely unnoticed. Scientific observations reveal that this enigmatic orb is gradually distancing itself from Earth at a rate of approximately 3.8 centimeters every year. This phenomenon, known as lunar recession, is a consequence of the intricate gravitational interplay between the Moon and our planet. The Moon's gravitational pull generates tides on Earth, causing ocean waters to bulge towards it. Simultaneously, the Earth's rotation imparts a torque on these tidal bulges, gradually transferring angular momentum to the Moon. This energy exchange manifests as a gradual increase in the Moon's orbital radius. While the pace of this retreat is hardly perceptible on human timescales, its cumulative effect over millions of years could have far-reaching implications for Earth's rotation and the Moon's eventual role in shaping our planet's cosmic destiny.
+            </p>
           </div>
-          <div class="gallery-cell"></div>
-          <div class="gallery-cell"></div>
+          <div class="gallery-cell">
+            <h2 class="paragraph-font font-medium">The Moon and The Sun are not the same size</h2>
+            <p class="paragraph-font font-paragraph">The celestial spectacle of a total solar eclipse often leaves us in awe as we witness the seemingly perfect alignment of the Sun and the Moon. Remarkably, from our vantage point on Earth, these two luminous orbs appear strikingly similar in size, an optical illusion that belies the vast differences in their dimensions and distances. The Sun, a colossal and fiery star, dwarfs the Moon by a staggering factor of 400. Yet, this cosmic incongruity is elegantly balanced by their relative distances. The Moon, though a mere fraction of the Sun's size, orbits a mere 400 times closer to Earth. This precise alignment of size and distance creates an exquisite phenomenon, allowing the Moon to completely obscure the Sun during a total solar eclipse. This phenomenon showcases the marvels of celestial mechanics, where the dance of distances and proportions results in breathtaking visual spectacles that have captivated human curiosity for generations. As we marvel at this cosmic illusion, we gain a deeper appreciation for the intricacies of our universe and the delicate balance of forces that shape its wonders.
+            </p>
+          </div>
         </div>
       </div>
     </section>

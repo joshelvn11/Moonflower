@@ -6,8 +6,9 @@ const modal = document.getElementById("menu-modal");
 const btnOpenModal = document.getElementById("mobile-nav-btn");
 const btnCloseModal = document.getElementById("mobile-nav-btn-close");
 const modalOverlay = document.getElementById("modal-overlay");
+const mobileNavLinks = document.getElementsByClassName("mobile-nav-link");
 
-console.log(btnOpenModal);
+console.log(mobileNavLinks);
 
 btnOpenModal.addEventListener("click", () => {
   modal.classList.remove("hidden");
@@ -24,6 +25,50 @@ modalOverlay.addEventListener("click", () => {
   modalOverlay.classList.add("hidden");
 });
 
+for (let i = 0; i < mobileNavLinks.length; i++) {
+  let mobileNavLink = mobileNavLinks[i];
+  console.log(mobileNavLink);
+  mobileNavLink.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    modalOverlay.classList.add("hidden");
+  });
+}
+
+/* ----- Accessibility Controls ---- */
+
+const audioCtrlBtns = document.getElementsByClassName("audio-control");
+const particleCtrlBtns = document.getElementsByClassName("particle-control");
+
+for (let i = 0; i < audioCtrlBtns.length; i++) {
+  let audioCtrlBtn = audioCtrlBtns[i];
+
+  audioCtrlBtn.addEventListener("click", () => {
+    if (!audioCtrlBtn.checked) {
+      audioCtrlBtn.checked = false;
+      backgroundAudio.pause();
+      console.log("Pausing Audio");
+    } else {
+      audioCtrlBtn.checked = true;
+      backgroundAudio.play();
+      console.log("Playing Audio");
+    }
+  });
+}
+
+for (let i = 0; i < particleCtrlBtns.length; i++) {
+  let particleCtrlBtn = particleCtrlBtns[i];
+
+  particleCtrlBtn.addEventListener("click", () => {
+    if (!particleCtrlBtn.checked) {
+      particleCtrlBtn.checked = false;
+      particles.classList.add("hidden");
+    } else {
+      particleCtrlBtn.checked = true;
+      particles.classList.remove("hidden");
+    }
+  });
+}
+
 /* ----- Entry Options Modal ---- */
 
 const body = document.getElementById("body");
@@ -38,10 +83,28 @@ const particles = document.getElementById("particles-js");
 enterSiteBtn.addEventListener("click", () => {
   if (enableAudio.checked) {
     backgroundAudio.play();
+    for (let i = 0; i < audioCtrlBtns.length; i++) {
+      let audioCtrlBtn = audioCtrlBtns[i];
+      audioCtrlBtn.checked = true;
+    }
+  } else {
+    for (let i = 0; i < audioCtrlBtns.length; i++) {
+      let audioCtrlBtn = audioCtrlBtns[i];
+      audioCtrlBtn.checked = false;
+    }
   }
 
   if (!enableParticles.checked) {
     particles.classList.add("hidden");
+    for (let i = 0; i < particleCtrlBtns.length; i++) {
+      let particleCtrlBtn = particleCtrlBtns[i];
+      particleCtrlBtn.checked = false;
+    }
+  } else {
+    for (let i = 0; i < particleCtrlBtns.length; i++) {
+      let particleCtrlBtn = particleCtrlBtns[i];
+      particleCtrlBtn.checked = true;
+    }
   }
 
   document.body.classList.remove("overflow-hidden");
@@ -65,4 +128,3 @@ var flkty = new Flickity(".gallery", {
   cellAlign: "left",
   contain: true,
 });
-console.log("Initialised flickity");
