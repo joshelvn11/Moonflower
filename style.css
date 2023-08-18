@@ -71,6 +71,13 @@ body::-webkit-scrollbar-thumb {
 /* ----- Font Related Classes ----- */
 .display-font {
   font-family: var(--display-font);
+  text-align: center;
+}
+
+@media screen and (max-width: 622px) {
+  #hero-text-large {
+    font-size: 82px;
+  }
 }
 
 .paragraph-font {
@@ -97,8 +104,20 @@ body::-webkit-scrollbar-thumb {
   font-size: 2.2rem;
 }
 
+@media screen and (max-width: 622px) {
+  .font-large {
+    font-size: 1.8rem;
+  }
+}
+
 .font-x-large {
   font-size: 3rem;
+}
+
+@media screen and (max-width: 622px) {
+  .font-x-large {
+    font-size: 2.6rem;
+  }
 }
 
 .font-xx-large {
@@ -163,6 +182,18 @@ label {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-only {
+    display: none;
+  }
 }
 
 /* ----- Buttons ----- */
@@ -281,6 +312,10 @@ a {
 
 a:hover {
   color: var(--primary-font-color);
+}
+
+.section-content-wrapper {
+  margin: 48px 0px;
 }
 
 #background-section {
@@ -637,6 +672,92 @@ tr {
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* ----- Gallery -----*/
+
+#swipe-container {
+  margin: -24px 0px;
+}
+
+#swipe-lottie {
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.gallery {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.gallery-cell {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+  box-sizing: border-box;
+  padding: 45px 75px;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery-cell {
+    padding: 24px 36px;
+    height: 85vh;
+  }
+}
+
+.flickity-button {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .flickity-button {
+    display: none !important;
+  }
+}
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+.dot {
+  background: var(--primary-font-color) !important;
+}
+
+/* ----- Quiz Section ----- */
+#quiz-form {
+  width: 100%;
+  height: 500px;
+}
+
+#quiz-form > label {
+  display: block;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  color: var(--primary-font-color);
 }
 
 /* ----- Glassmorphism Styling ----- */

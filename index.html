@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script
       src="https://kit.fontawesome.com/824860f618.js"
       crossorigin="anonymous"
@@ -39,13 +40,14 @@
           <div id="entry-modal-form-wrapper">
             <p>Choose how you would like to customise your experience</p>
 
-            <input type="checkbox" name="enable-audio" id="enable-audio" />
+            <input type="checkbox" name="enable-audio" id="enable-audio" checked/>
             <label for="enable-audio">Enable Audio</label>
 
             <input
               type="checkbox"
               name="enable-particles"
               id="enable-particles"
+              checked
             />
             <label for="enable-particles">Enable Particles</label>
           </div>
@@ -133,7 +135,7 @@
 
     <!---------- Data Section ------------>
 
-    <section class="fullscreen-section flex-center" id="data-section">
+    <section class="flex-center" id="data-section">
       <div class="section-content-wrapper">
         <h1 class="display-font font-large">Real Time Data</h1>
         <div id="data-cards-grid">
@@ -184,7 +186,7 @@
     </section>
 
     <!---------- Statistics Section Section ------------>
-    <section class="fullscreen-section flex-center" id="statistics-section">
+    <section class=" flex-center" id="statistics-section">
       <div class="section-content-wrapper">
         <h1 class="display-font font-large">Statistics & Data</h1>
         <!---------- Size & Mass ------------>
@@ -336,7 +338,7 @@
 
     <!---------- Histrory Section ------------>
 
-    <section class="fullscreen-section flex-center" id="history-section">
+    <section class="flex-center" id="history-section">
       <div class="section-content-wrapper">
         <h1 class="display-font font-large">History & Timeline</h1>
         <div class="timeline-container">
@@ -565,9 +567,60 @@
       </div>
     </section>
 
+    <!---------- Information Section ------------>
+
+    <section class="flex-center">
+      <div class="section-content-wrapper">
+        <h1 class="display-font font-large">Interesting Information</h1>
+        <div class="mobile-only flex-center" id="swipe-container">
+          <iframe id="swipe-lottie" src="https://lottie.host/?file=86fe9acb-a88a-4d4a-926f-ba333492eac9/L84st2oRod.json"></iframe>
+          <p class="paragraph-font font-paragraph">Swipe to scroll</p>
+        </div>
+        <div class="gallery glass-container-medium">
+          <div class="gallery-cell">
+            <h2 class="paragraph-font font-medium">The Moon began with an explosive collision</h2>
+            <p class="paragraph-font font-paragraph">“The prevailing idea is that the Moon was formed in a violent event between the proto-Earth – an early-stage Earth that was much bigger than it is today – and an object (labelled ‘Theia’) about the size of Mars,” explains Robert Massey, deputy executive director of the Royal Astronomical Society. “Debris was ejected into space and then coalesced to form the Moon.” Modern research seems to confirm the Moon is made of material from the early Earth’s crust. Dubbed the ‘Giant Impact Hypothesis,’ this collision is believed to have happened 4.5 billion years ago and would have been 100 million times larger than the event which wiped out the dinosaurs.</p>
+          </div>
+          <div class="gallery-cell">
+            <h2 class="paragraph-font font-medium">The Moon began with an explosive collision</h2>
+            <p class="paragraph-font font-paragraph">“The prevailing idea is that the Moon was formed in a violent event between the proto-Earth – an early-stage Earth that was much bigger than it is today – and an object (labelled ‘Theia’) about the size of Mars,” explains Robert Massey, deputy executive director of the Royal Astronomical Society. “Debris was ejected into space and then coalesced to form the Moon.” Modern research seems to confirm the Moon is made of material from the early Earth’s crust. Dubbed the ‘Giant Impact Hypothesis,’ this collision is believed to have happened 4.5 billion years ago and would have been 100 million times larger than the event which wiped out the dinosaurs.</p>
+          </div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+        </div>
+      </div>
+    </section>
+
+  <!---------- Quiz Section ------------>
+
+  <section class="flex-center">
+    <div class="section-content-wrapper">
+      <h1 class="display-font font-large">Take the quiz</h1>
+      <form class="glass-container-medium" action="https://formdump.codeinstitute.net" method="POST" id="quiz-form">
+        <fieldset>
+          <legend class="paragraph-font font-large"></legend>
+          <label for="question-one" class="paragraph-font font-medium">1. Who is the Greek God of the Moon?</label>
+          <input type="text" name="question-one" id="question-one" list="question-one-datalist" class="paragraph-font font-paragraph">
+          <datalist id="question-one-datalist">
+            <option value="selene">Selene</option>
+            <option value="persephone">Persephone</option>
+            <option value="eros">Eros</option>
+            <option value="gaia">Gaia</option>
+            <option value="Asclepius">Asclepius</option>
+          </datalist>
+          <label for="question-two" class="paragraph-font font-medium">1. Who is the Egyptian God of the Moon</label>
+          <input type="checkbox" name="question-two" value="Ra" id="question-two-op-one" class="paragraph-font font-paragraph">
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+
     <!-- Import Particles.js and app.js files -->
     <script src="assets/scripts/particles.js-master/particles.js"></script>
     <script src="assets/scripts/particles.js-master/demo/js/app.js"></script>
+    <!-- Import Flickity.js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

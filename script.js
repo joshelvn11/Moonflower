@@ -59,3 +59,10 @@ for (let i = 0; i < accordianBtns.length; i++) {
     accordianBtns[i].firstElementChild.classList.toggle("fa-minus");
   });
 }
+
+var flkty = new Flickity(".gallery", {
+  // options
+  cellAlign: "left",
+  contain: true,
+});
+console.log("Initialised flickity");
