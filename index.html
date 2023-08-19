@@ -4,25 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script
-      src="https://kit.fontawesome.com/824860f618.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Moonflower</title>
   </head>
   <body id="body" class="overflow-hidden">
+
+    <!---------- Background Elements ------------>
+
     <div id="background-section" class="fullscreen-section"></div>
     <div id="particles-js" class="fullscreen-section"></div>
-    <audio
-      loop
-      src="/assets/audio/background-audio-compressed.mp3"
-      id="background-audio"
-    ></audio>
+    <audio loop src="/assets/audio/background-audio-compressed.mp3" id="background-audio"></audio>
 
     <!---------- Preloader ------------>
 
@@ -32,10 +22,7 @@
 
     <!---------- Entry Modal ------------>
 
-    <section
-      id="entry-modal"
-      class="fullscreen-section paragraph-font align-center"
-    >
+    <section id="entry-modal" class="fullscreen-section paragraph-font align-center">
       <div id="entry-modal-content-wrapper">
         <div id="entry-modal-heading-wrapper">
           <h1 class="font-x-large display-font">Welcome</h1>
@@ -74,51 +61,49 @@
 
       <!-- Desktop Navigation -->
       <nav id="desktop-nav" class="paragraph-font font-medium">
-        <a href="#data-section" class="hover-underline-animation">Data</a>
-        <a href="#statistics-section" class="hover-underline-animation"
-          >Statistics</a
-        >
-        <a href="#history-section" class="hover-underline-animation">History</a>
-        <a href="#info-section" class="hover-underline-animation">Facts</a>
-        <a href="#quiz-section" class="hover-underline-animation">Quiz</a>
+        <a href="#data-section" class="hover-underline-animation" aria-label="Go to data section">Data</a>
+        <a href="#statistics-section" class="hover-underline-animation" aria-label="Go to statistics section">Statistics</a>
+        <a href="#history-section" class="hover-underline-animation" aria-label="Go to history section">History</a>
+        <a href="#info-section" class="hover-underline-animation" aria-label="Go to facts section">Facts</a>
+        <a href="#quiz-section" class="hover-underline-animation" aria-label="Go to quiz section">Quiz</a>
         <label for="auido-control">Sound</label>
         <label class="switch">
-          <input type="checkbox" class="audio-control" id="audio-control">
+          <input type="checkbox" class="audio-control" id="audio-control" aria-label="Turn sound on or off">
           <span class="slider round"></span>
         </label>
         <label for="particle-control" id="particles-control-label">Particles</label>
         <label class="switch">
-          <input type="checkbox" class="particle-control" id="particle-control">
+          <input type="checkbox" class="particle-control" id="particle-control" aria-label="Turn background particles on or off">
           <span class="slider round"></span>
         </label>
       </nav>
 
       <!-- Mobile Navigation -->
-      <button id="mobile-nav-btn" class="transparent-button font-medium">
+      <button id="mobile-nav-btn" class="transparent-button font-medium" aria-label="Open pop-up menu">
         <span class="fa fa-bars"></span>
       </button>
 
       <div id="menu-modal" class="hidden">
-        <button id="mobile-nav-btn-close" class="transparent-button font-medium">
+        <button id="mobile-nav-btn-close" class="transparent-button font-medium" aria-label="Close pop-up menu">
           <span class="fa fa-times"></span>
         </button>
         <nav id="mobile-nav" class="paragraph-font font-medium">
-          <a href="#data-section" class="mobile-nav-link">Data</a>
-          <a href="#statistics-section" class="mobile-nav-link">Statistics</a>
-          <a href="#history-section" class="mobile-nav-link">History</a>
-          <a href="#info-section" class="mobile-nav-link">Facts</a>
-          <a href="#quiz-section" class="mobile-nav-link">Quiz</a>
+          <a href="#data-section" class="mobile-nav-link" aria-label="Go to data section" >Data</a>
+          <a href="#statistics-section" class="mobile-nav-link" aria-label="Go to statistics section" >Statistics</a>
+          <a href="#history-section" class="mobile-nav-link" aria-label="Go to history section" >History</a>
+          <a href="#info-section" class="mobile-nav-link" aria-label="Go to facts section" >Facts</a>
+          <a href="#quiz-section" class="mobile-nav-link" aria-label="Go to quiz section">Quiz</a>
           <div class="mobile-control-wrapper">
           <label for="auido-control">Sound</label>
           <label class="switch">
-            <input type="checkbox" class="audio-control" id="audio-control">
+            <input type="checkbox" class="audio-control" id="audio-control-mobile" aria-label="Turn sound on or off (mobile button)">
             <span class="slider round"></span>
           </label>
         </div>
         <div class="mobile-control-wrapper">
           <label for="particle-control">Particles</label>
           <label class="switch">
-            <input type="checkbox" class="particle-control" id="particle-control">
+            <input type="checkbox" class="particle-control" id="particle-control-mobile" aria-label="Turn background particles on or off (mobile button)">
             <span class="slider round"></span>
           </label>
         </div>
@@ -138,7 +123,7 @@
         </div>
       </div>
       <div id="hero-image-wrapper">
-        <img id="hero-image" src="assets/media/images/moon-image-3.webp" />
+        <img id="hero-image" src="assets/media/images/moon-image-3.webp" alt="Large picture of the Moon"/>
       </div>
     </section>
 
@@ -170,45 +155,47 @@
         <h1 class="display-font font-large">Real Time Data</h1>
         <div id="data-cards-grid">
           <div class="data-card data-card-large glass-container-medium">
-            <h3 class="paragraph-font font-paragraph">Astrological Sign</h3>
+            <h2 class="paragraph-font font-paragraph">Astrological Sign</h2>
             <img
               class="data-card-symbol"
               src="assets/media/star-sign-symbols/aries.png"
+              aria-labelledby="astrological-sign"
             />
-            <p class="display-font font-medium">Aries</p>
+            <p class="display-font font-medium" id="astrological-sign">Aries</p>
           </div>
 
           <div class="data-card data-card-large glass-container-medium">
-            <h3 class="paragraph-font font-paragraph">Current Phase</h3>
+            <h2 class="paragraph-font font-paragraph">Current Phase</h2>
             <img
               class="data-card-symbol"
               src="assets/media/moon-phases/full-moon.png"
+              aria-labelledby="current-phase"
             />
-            <p class="display-font font-medium">Full Moon</p>
+            <p class="display-font font-medium" id="current-phase">Full Moon</p>
           </div>
 
           <div class="data-card data-card-small glass-container-medium">
-            <h3 class="paragraph-font font-paragraph">Full Moon</h3>
+            <h2 class="paragraph-font font-paragraph">Full Moon</h2>
             <p class="display-font font-medium">12 Sep</p>
           </div>
           <div class="data-card data-card-small glass-container-medium">
-            <h3 class="paragraph-font font-paragraph">New Moon</h3>
+            <h2 class="paragraph-font font-paragraph">New Moon</h2>
             <p class="display-font font-medium">8 Aug</p>
           </div>
           <div class="data-card data-card-long glass-container-medium">
-            <h3 class="paragraph-font font-paragraph">Distance from Earth</h3>
+            <h2 class="paragraph-font font-paragraph">Distance from Earth</h2>
             <p class="display-font font-medium">356 000 km</p>
           </div>
           <div class="data-card data-card-small glass-container-medium">
-            <h3 class="paragraph-font font-paragraph">Altitude</h3>
+            <h2 class="paragraph-font font-paragraph">Altitude</h2>
             <p class="display-font font-medium">27.02°</p>
           </div>
           <div class="data-card data-card-small glass-container-medium">
-            <h3 class="paragraph-font font-paragraph">Cycle Day</h3>
+            <h2 class="paragraph-font font-paragraph">Cycle Day</h2>
             <p class="display-font font-medium">17.34</p>
           </div>
           <div class="data-card data-card-small glass-container-medium">
-            <h3 class="paragraph-font font-paragraph">Altitude</h3>
+            <h2 class="paragraph-font font-paragraph">Altitude</h2>
             <p class="display-font font-medium">27.02°</p>
           </div>
         </div>
@@ -216,14 +203,12 @@
     </section>
 
     <!---------- Statistics Section Section ------------>
-    <section class=" flex-center" id="statistics-section">
+    <section class=" lex-center" id="statistics-section">
       <div class="section-content-wrapper">
         <h1 class="display-font font-large">Statistics & Data</h1>
         <!---------- Size & Mass ------------>
         <div class="accordian glass-container-medium">
-          <button
-            class="accordian-button transparent-button paragraph-font font-medium"
-          >
+          <button class="accordian-button transparent-button paragraph-font font-medium" aria-label="Open Size & Mass stats section">
             <span class="fa-solid fa-plus"></span> Size & Mass
           </button>
           <div class="accordian-panel hidden paragraph-font font-paragraph">
@@ -259,6 +244,7 @@
         <div class="accordian glass-container-medium">
           <button
             class="accordian-button transparent-button paragraph-font font-medium"
+            aria-label="Open gravity stats section"
           >
             <span class="fa-solid fa-plus"></span> Gravity
           </button>
@@ -287,6 +273,7 @@
         <div class="accordian glass-container-medium">
           <button
             class="accordian-button transparent-button paragraph-font font-medium"
+            aria-label="Open temperature & light stats section"
           >
             <span class="fa-solid fa-plus"></span> Temperature & Light
           </button>
@@ -319,6 +306,7 @@
         <div class="accordian glass-container-medium">
           <button
             class="accordian-button transparent-button paragraph-font font-medium"
+            aria-label="Open orbit stats section"
           >
             <span class="fa-solid fa-plus"></span> Orbit
           </button>
@@ -351,12 +339,13 @@
             </table>
           </div>
         </div>
-        <!---------- Atmostphere ------------>
+        <!---------- Atmosphere ------------>
         <div class="accordian glass-container-medium">
           <button
             class="accordian-button transparent-button paragraph-font font-medium"
+            aria-label="Open atmosphere stats section"
           >
-            <span class="fa-solid fa-plus"></span> Atmostphere
+            <span class="fa-solid fa-plus"></span> Atmosphere
           </button>
           <div class="accordian-panel hidden paragraph-font font-paragraph">
             <table>
@@ -649,7 +638,7 @@
       <div class="section-content-wrapper">
         <h1 class="display-font font-large">Interesting Information</h1>
         <div class="mobile-only flex-center" id="swipe-container">
-          <iframe id="swipe-lottie" src="https://lottie.host/?file=86fe9acb-a88a-4d4a-926f-ba333492eac9/L84st2oRod.json"></iframe>
+          <iframe id="swipe-lottie" src="https://lottie.host/?file=86fe9acb-a88a-4d4a-926f-ba333492eac9/L84st2oRod.json" aria-label="Swipe to scroll animation"></iframe>
           <p class="paragraph-font font-paragraph">Swipe to scroll</p>
         </div>
         <div class="gallery glass-container-medium">
@@ -700,7 +689,7 @@
               <label for="question-two-op-two" class="paragraph-font font-paragraph">Isis</label>
             </div>
             <div class="question-option-wrapper">
-              <input type="radio" name="question-two" value="Khonsu" id="question-two-op-thre" class="paragraph-font font-paragraph">
+              <input type="radio" name="question-two" value="Khonsu" id="question-two-op-three" class="paragraph-font font-paragraph">
               <label for="question-two-op-three" class="paragraph-font font-paragraph">Khonsu</label>
             </div>
       
@@ -751,9 +740,9 @@
     <footer>
       <p class="display-font font-medium">MOONFLOWER</p>
       <div class="flex-center gap-6">
-        <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i></a>
-        <a href="https://instagram/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i></a>
-        <a href="https://youtube.com/" target="_blank"><i class="fa-brands fa-square-youtube fa-2xl" style="color: #ffffff;"></i></a>
+        <a href="https://facebook.com/" target="_blank" aria-label="Link to Facebook Page (opens in new tab)"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i></a>
+        <a href="https://instagram/" target="_blank" aria-label="Link to Instagram Page (opens in new tab)"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i></a>
+        <a href="https://youtube.com/" target="_blank" aria-label="Link to Youtube Page (opens in new tab)"><i class="fa-brands fa-square-youtube fa-2xl" style="color: #ffffff;"></i></a>
       </div>
     </footer>
 
@@ -764,5 +753,8 @@
     <!-- Import Flickity.js -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://kit.fontawesome.com/824860f618.js" crossorigin="anonymous"></script>
   </body>
 </html>
