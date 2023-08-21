@@ -139,6 +139,12 @@ label {
   padding-right: 16px;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 /* ----- General Utility Classes ----- */
 
 .hidden {
@@ -168,6 +174,10 @@ label {
 
 .block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .align-center {

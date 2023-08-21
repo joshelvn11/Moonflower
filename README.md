@@ -39,9 +39,43 @@ This sections features miscelleanous interesting facts / information about the M
 
 The final section is a quiz on the Moon, its history, mythology, and science. The quiz uses HTML forms with a variety of different input types to mix up the question format and make it more engaging.
 
+## Testing
+
+## Deployment
+
+This repo is deployed to two locations: GitHub pages and a Linode instance.
+
+The repo is configured to automatically to deploy GitHub pages using GitHub actions every time commit is pushed to the main branch.
+
+I then also manually deploy the website to my Linode instance running an OpenLiteSpeed webserver using Cyberpanel by copying the files from my local machine to the server via SFTP.
+
 ## Credits
 
-### particle.js
+### Content
 
-https://github.com/VincentGarreau/particles.js
-https://www.geeksforgeeks.org/how-to-use-particle-js-in-javascript-project/
+### HTML & CSS
+
+#### Toggle Switches
+
+https://www.w3schools.com/howto/howto_css_switch.asp <br>
+
+### Preloader
+
+### Javascript
+
+#### particle.js
+
+Github repo - https://github.com/VincentGarreau/particles.js <br>
+Usage tutorial - https://www.geeksforgeeks.org/how-to-use-particle-js-in-javascript-project/
+
+#### flickity.js
+
+Usage tutorial - https://css-tricks.com/creating-responsive-touch-friendly-carousels-with-flickity/
+
+### Icons
+
+<a href="https://www.flaticon.com/free-icons/full-moon" title="full moon icons">Full moon icons created by vectorsmarket15 - Flaticon</a>
+
+### Images
+
+Moon Image - http://pngfre.com/
