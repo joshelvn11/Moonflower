@@ -557,7 +557,7 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
-#hero-text-wrapper > h1 {
+#hero-text-wrapper > p {
   text-align: center;
   width: 100%;
   margin: -32px 0px;
@@ -584,7 +584,7 @@ a:hover {
     font-size: 52px;
   }
 
-  #hero-text-wrapper > h1 {
+  #hero-text-wrapper > p {
     margin: -28px 0px;
   }
 }
@@ -598,7 +598,7 @@ a:hover {
     font-size: 42px;
   }
 
-  #hero-text-wrapper > h1 {
+  #hero-text-wrapper > p {
     margin: -28px 0px;
   }
 }
@@ -612,7 +612,7 @@ a:hover {
     font-size: 32px;
   }
 
-  #hero-text-wrapper > h1 {
+  #hero-text-wrapper > p {
     margin: -20px 0px;
   }
 }
@@ -645,7 +645,7 @@ a:hover {
     font-size: 18px;
   }
 
-  #hero-text-wrapper > h1 {
+  #hero-text-wrapper > p {
     margin: -8px 0px;
   }
 }

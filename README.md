@@ -1,5 +1,7 @@
 # Moonflower - Moon Website
 
+![Devices Mockuo](/assets/misc/Devices%20Mockup.png "Moonflower - Devices Mockuo")
+
 ## Overview
 
 Moonflower is website designed to provide general information, both current and historical, about the Moon to users seeking such information.
@@ -41,25 +43,50 @@ The final section is a quiz on the Moon, its history, mythology, and science. Th
 
 ## Testing
 
+### Browser Compatability
+
 ## Deployment
 
 This repo is deployed to two locations: GitHub pages and a Linode instance.
 
 The repo is configured to automatically to deploy GitHub pages using GitHub actions every time commit is pushed to the main branch.
 
-I then also manually deploy the website to my Linode instance running an OpenLiteSpeed webserver using Cyberpanel by copying the files from my local machine to the server via SFTP.
+GitHub Pages Website - https://joshelvn11.github.io/Moonflower/
+
+I then also manually deploy the website to my Linode instance running an OpenLiteSpeed webserver on Ubuntu using Cyberpanel by copying the files from my local machine to the server via SFTP.
+
+Linode Site - https://moonflower.ddns.net/
 
 ## Credits
 
 ### Content
 
+All the long-form written content was written by ChatGPT by finding relevant info / headlines from the following articles and then asking ChatGPT to expand on them. <br>
+https://www.nhm.ac.uk/discover/factfile-the-moon.html <br>
+https://www.nationalgeographic.co.uk/space/2019/01/10-amazing-facts-about-the-moon <br>
+https://www.space.com/12841-moon-exploration-lunar-mission-timeline.html <br>
+https://www.rmg.co.uk/stories/topics/interesting-facts-about-moon <br>
+
+Statistical data comes from the following source:
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html
+
 ### HTML & CSS
 
 #### Toggle Switches
 
-https://www.w3schools.com/howto/howto_css_switch.asp <br>
+W3Schools Tutorial - https://www.w3schools.com/howto/howto_css_switch.asp <br>
 
-### Preloader
+#### Preloader
+
+CSS Portal - https://www.cssportal.com/css-loader-generator/
+
+#### Glassmorphism Styling
+
+Hype4Academy Glassmorphism Generator - https://hype4.academy/tools/glassmorphism-generator
+
+#### Nav Link Hover State Underline Animation
+
+30 Seconds of Code - https://www.30secondsofcode.org/css/s/hover-underline-animation/
 
 ### Javascript
 
@@ -70,12 +97,17 @@ Usage tutorial - https://www.geeksforgeeks.org/how-to-use-particle-js-in-javascr
 
 #### flickity.js
 
-Usage tutorial - https://css-tricks.com/creating-responsive-touch-friendly-carousels-with-flickity/
+Flickity Site - https://flickity.metafizzy.co/ <br>
+Flickity GitHub - https://flickity.metafizzy.co/ <br>
+Usage tutorial - https://css-tricks.com/creating-responsive-touch-friendly-carousels-with-flickity/ <br>
 
 ### Icons
 
-<a href="https://www.flaticon.com/free-icons/full-moon" title="full moon icons">Full moon icons created by vectorsmarket15 - Flaticon</a>
+Favicon Icons, Code & Manifest - https://realfavicongenerator.net/ <br>
+<a href="https://www.flaticon.com/free-icons/full-moon" title="full moon icons">Full moon icons created by vectorsmarket15 - Flaticon</a> <br>
+Astrology Symbols - https://www.flaticon.com/ <br>
+Other Icons -
 
 ### Images
 
-Moon Image - http://pngfre.com/
+Moon Image - https://pngfre.com/moon-png/moon-52/
