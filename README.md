@@ -100,7 +100,11 @@ The website was tested on Chrome, Firefox and Safari both on mobile and on deskt
 
 ### Validator Testing
 
-The website was pass through for W3C Validtor for markup validation and the Jigsaw Validator for style validation
+The website was passed through for W3C Validtor for markup validation and the Jigsaw Validator for style validation.
+
+The markup validation returned two errors, both are for two instances of the same error regarding a label being used for a hidden form input. This occurs as the input elements for the sound and particle controls have to be visually hidden in order to implement the custom control styles. 
+
+The CSS styling validator returned with no errors.
 
 ### Usability Testing
 

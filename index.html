@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" >
+    <link rel="stylesheet" type="text/css" href="style.css" >
     <title>Moonflower</title>
     <meta
       name="description"
       content="Find out everything you need to know about The Moon, from facts & statistics to history and stories"
-    />
+    >
     <!-- Favicon -->
     <!-- Created using https://realfavicongenerator.net/ -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="assets/media/favicon/apple-touch-icon.png"
-    />
+    >
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="assets/media/favicon/favicon-32x32.png"
-    />
+    >
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="assets/media/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/media/favicon/site.webmanifest" />
+    >
+    <link rel="manifest" href="assets/media/favicon/site.webmanifest" >
     <link
       rel="mask-icon"
       href="assets/media/favicon/safari-pinned-tab.svg"
       color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#2b5797" />
-    <meta name="theme-color" content="#ffffff" />
+    >
+    <meta name="msapplication-TileColor" content="#2b5797" >
+    <meta name="theme-color" content="#ffffff" >
   </head>
   <body id="body" class="overflow-hidden">
     <!-- Background Elements -->
@@ -56,7 +56,7 @@
 
     <!--Entry Modal -->
 
-    <section
+    <div
       id="entry-modal"
       class="fullscreen-section paragraph-font align-center"
     >
@@ -68,7 +68,7 @@
             the Moon.
           </p>
           <p>
-            Choose how you would like to customise your experience. <br /><br />
+            Choose how you would like to customise your experience. <br ><br >
             You can change these options at any time via the navigation menu.
           </p>
 
@@ -79,7 +79,7 @@
                 name="enable-audio"
                 id="enable-audio"
                 checked
-              />
+              >
               <label for="enable-audio">Enable Audio</label>
             </div>
 
@@ -89,7 +89,7 @@
                 name="enable-particles"
                 id="enable-particles"
                 checked
-              />
+              >
               <label for="enable-particles">Enable Particles</label>
             </div>
           </div>
@@ -98,7 +98,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Header -->
 
@@ -144,7 +144,7 @@
             class="audio-control"
             id="audio-control"
             aria-label="Turn sound on or off"
-          />
+          >
           <span class="slider round"></span>
         </label>
         <label for="particle-control" id="particles-control-label"
@@ -156,7 +156,7 @@
             class="particle-control"
             id="particle-control"
             aria-label="Turn background particles on or off"
-          />
+          >
           <span class="slider round"></span>
         </label>
       </nav>
@@ -217,7 +217,7 @@
                 class="audio-control"
                 id="audio-control-mobile"
                 aria-label="Turn sound on or off (mobile button)"
-              />
+              >
               <span class="slider round"></span>
             </label>
           </div>
@@ -229,7 +229,7 @@
                 class="particle-control"
                 id="particle-control-mobile"
                 aria-label="Turn background particles on or off (mobile button)"
-              />
+              >
               <span class="slider round"></span>
             </label>
           </div>
@@ -241,7 +241,7 @@
 
     <!-- Hero Section -->
 
-    <section id="hero-section">
+    <div id="hero-section">
       <div id="hero-text-container" class="fullscreen-section">
         <div id="hero-text-wrapper">
           <p class="paragraph-font-light" id="hero-text-medium">THE</p>
@@ -253,21 +253,21 @@
           id="hero-image"
           src="assets/media/images/moon-image-3.webp"
           alt="Large picture of the Moon"
-        />
+        >
       </div>
-    </section>
+    </div>
 
     <!-- Intro Section -->
 
-    <section class="fullscreen-section flex-center">
+    <div class="fullscreen-section flex-center">
       <div class="section-content-wrapper">
         <p class="paragraph-font font-paragraph">
           The Moon, Earth's only natural satellite, has captivated humanity for
           millennia with its mesmerizing beauty and profound mysteries. Located
           approximately 384,400 kilometers away, the Moon exerts a significant
           influence on our planet, shaping its tides and providing a source of
-          inspiration, myth, and scientific wonder. <br />
-          <br />
+          inspiration, myth, and scientific wonder. <br >
+          <br >
           Its formation remains a subject of ongoing debate, but the most widely
           accepted theory suggests that the Moon emerged around 4.5 billion
           years ago from the debris created by a massive collision between a
@@ -276,13 +276,13 @@
           Moon.
         </p>
       </div>
-    </section>
+    </div>
 
     <!--Data Section -->
 
     <section class="flex-center" id="data-section">
       <div class="section-content-wrapper">
-        <h1 class="display-font font-large">Real Time Data</h1>
+        <h2 class="display-font font-large">Real Time Data</h2>
         <div id="data-cards-grid">
           <div class="data-card data-card-large glass-container-medium">
             <h2 class="paragraph-font font-paragraph">Astrological Sign</h2>
@@ -291,7 +291,7 @@
               src="assets/media/star-sign-symbols/aries.png"
               alt="Aries star sign symbol"
               aria-hidden="true"
-            />
+            >
             <p class="display-font font-medium" id="astrological-sign">Aries</p>
           </div>
 
@@ -302,7 +302,7 @@
               src="assets/media/moon-phases/full-moon.png"
               alt="Full moon symbol"
               aria-hidden="true"
-            />
+            >
             <p class="display-font font-medium" id="current-phase">Full Moon</p>
           </div>
 
@@ -337,15 +337,15 @@
     <!-- Statistics Section Section -->
     <section class="flex-center" id="statistics-section">
       <div class="section-content-wrapper">
-        <h1 class="display-font font-large">Statistics & Data</h1>
+        <h2 class="display-font font-large">Statistics & Data</h2>
         <!-- Size & Mass -->
         <div class="accordian glass-container-medium">
-          <h2
+          <h3
             class="accordian-button transparent-button paragraph-font font-medium"
             aria-label="Open Size & Mass stats section"
           >
             <span class="fa-solid fa-plus"></span> Size & Mass
-          </h2>
+          </h3>
 
           <div class="accordian-panel hidden paragraph-font font-paragraph">
             <table>
@@ -379,13 +379,13 @@
 
         <!-- Gravity -->
         <div class="accordian glass-container-medium">
-          <h2
+          <h3
             class="accordian-button transparent-button paragraph-font font-medium"
             aria-label="Open gravity stats section"
           >
             <span class="fa-solid fa-plus"></span>
             Gravity
-          </h2>
+          </h3>
 
           <div class="accordian-panel hidden paragraph-font font-paragraph">
             <table>
@@ -411,13 +411,13 @@
 
         <!-- Temperature & Light -->
         <div class="accordian glass-container-medium">
-          <h2
+          <h3
             class="accordian-button transparent-button paragraph-font font-medium"
             aria-label="Open temperature & light stats section"
           >
             <span class="fa-solid fa-plus"></span>
             Temperature & Light
-          </h2>
+          </h3>
           <div class="accordian-panel hidden paragraph-font font-paragraph">
             <table>
               <tr>
@@ -446,13 +446,13 @@
 
         <!-- Orbit -->
         <div class="accordian glass-container-medium">
-          <h2
+          <h3
             class="accordian-button transparent-button paragraph-font font-medium"
             aria-label="Open orbit stats section"
           >
             <span class="fa-solid fa-plus"></span>
             Orbit
-          </h2>
+          </h3>
           <div class="accordian-panel hidden paragraph-font font-paragraph">
             <table>
               <tr>
@@ -485,13 +485,13 @@
 
         <!-- Atmosphere -->
         <div class="accordian glass-container-medium">
-          <h2
+          <h3
             class="accordian-button transparent-button paragraph-font font-medium"
             aria-label="Open atmosphere stats section"
           >
             <span class="fa-solid fa-plus"></span>
             Atmosphere
-          </h2>
+          </h3>
           <div class="accordian-panel hidden paragraph-font font-paragraph">
             <table>
               <tr>
@@ -528,7 +528,7 @@
 
     <section class="flex-center" id="history-section">
       <div class="section-content-wrapper">
-        <h1 class="display-font font-large">History & Timeline</h1>
+        <h2 class="display-font font-large">History & Timeline</h2>
         <div class="timeline-container">
           <div class="timeline-event-wrapper">
             <div class="timeline-date-wrapper">
@@ -537,61 +537,61 @@
             </div>
             <div class="timeline-details-box-wrapper">
               <div class="timeline-details-box glass-container-medium">
-                <h2
+                <h3
                   class="accordian-button transparent-button paragraph-font font-medium"
                 >
                   <span class="fa-solid fa-plus"></span>
                   First Telescopic Observations by Galileo
-                </h2>
+                </h3>
                 <p class="paragraph-font font-paragraph hidden">
                   Galileo Galilei, an Italian astronomer, is renowned for his
                   groundbreaking contributions to astronomy, physics, and the
                   scientific method. One of his most significant achievements
                   was his use of a telescope to make pioneering observations of
                   the Moon, planets, and other celestial objects.
-                  <br /><br />
+                  <br ><br >
                   In 1609, Galileo heard about the invention of the telescope in
                   the Netherlands, and he quickly set about constructing his own
                   improved version. By early 1610, he had developed a telescope
                   with approximately 20x magnification, which he used to make
                   several crucial observations of the Moon.
-                  <br /><br />
+                  <br ><br >
                   On January 7, 1610, Galileo aimed his telescope at the Moon
                   and discovered features that challenged the prevailing
                   Aristotelian view of a perfect and unblemished celestial
                   sphere. He observed mountains, valleys, and craters on the
                   lunar surface, revealing that the Moon was a complex and
                   geologically active body rather than a perfect sphere.
-                  <br /><br />
+                  <br ><br >
                   Galileo's observations of the Moon had several implications:
-                  <br /><br />
+                  <br ><br >
                   1. Moon's Imperfections: Galileo's observations provided
                   direct evidence against the ancient belief that celestial
                   bodies were entirely smooth and perfect. His findings
                   supported the idea that the Moon, like Earth, had diverse
                   terrain.
-                  <br /><br />
+                  <br ><br >
                   2. Support for Heliocentrism: Galileo's discoveries lent
                   support to the heliocentric model of the solar system,
                   proposed by Nicolaus Copernicus. The presence of mountains and
                   valleys on the Moon suggested that not all celestial bodies
                   were perfect spheres, aligning with the Copernican idea that
                   the Earth was not the only planet with complex features.
-                  <br />
-                  <br />
+                  <br >
+                  <br >
                   3. Scientific Method: Galileo's telescopic observations marked
                   a shift towards empirical observation and experimentation in
                   the scientific process. His approach emphasized the importance
                   of direct observation and data collection to verify and
                   challenge existing theories.
-                  <br /><br />
+                  <br ><br >
                   4. Conflict with the Church: Galileo's findings not only
                   challenged Aristotelian cosmology but also clashed with the
                   geocentric model endorsed by the Catholic Church at the time.
                   This eventually led to conflict between Galileo and the
                   Church, resulting in his trial and condemnation for supporting
                   the heliocentric theory.
-                  <br /><br />
+                  <br ><br >
                   Galileo's observations of the Moon were just one aspect of his
                   broader astronomical work. He also discovered the four largest
                   moons of Jupiter (now known as the Galilean moons), observed
@@ -609,19 +609,19 @@
             </div>
             <div class="timeline-details-box-wrapper">
               <div class="timeline-details-box glass-container-medium">
-                <h2
+                <h3
                   class="accordian-button transparent-button paragraph-font font-medium"
                 >
                   <span class="fa-solid fa-plus"></span>
                   First Map of the Moon
-                </h2>
+                </h3>
                 <p class="paragraph-font font-paragraph hidden">
                   Michael Florent van Langren, also known as Michael Florentius
                   van Langren, was a Flemish astronomer and cartographer who is
                   credited with creating one of the earliest maps of the Moon.
                   His work represents an important milestone in the history of
                   lunar cartography.
-                  <br /><br />
+                  <br ><br >
                   In 1645, van Langren published a lunar map titled "Map of the
                   Moon," which is often referred to as the "Map of Michael
                   Florentius" or "Langrenus Map." This map was unique in that it
@@ -630,36 +630,36 @@
                   named lunar features, and it was designed to be viewed with
                   the Moon oriented so that the features would match the
                   observer's view through a telescope.
-                  <br /><br />
+                  <br ><br >
                   While Langren's map was a significant effort in early lunar
                   cartography, there were limitations to his work:
-                  <br /><br />
+                  <br ><br >
                   1. Lack of Detail: The telescopes available during Langren's
                   time were relatively primitive compared to modern telescopes.
                   As a result, the level of detail he could observe and
                   accurately depict on his map was limited.
-                  <br /><br />
+                  <br ><br >
                   2. Naming System: Langren's naming system for lunar features
                   was quite unique and not widely adopted. He used a combination
                   of Latin words and his own invented terms for naming the
                   craters and other formations.
-                  <br /><br />
+                  <br ><br >
                   3. Accuracy: Due to the limitations of the telescopic
                   technology of his time, Langren's map contained inaccuracies,
                   and some of the features were incorrectly positioned or
                   shaped.
-                  <br /><br />
+                  <br ><br >
                   4. Limited Distribution: Langren's map was not widely
                   circulated, and it did not have a significant impact on the
                   development of lunar cartography in subsequent years.
-                  <br /><br />
+                  <br ><br >
                   Despite its limitations, Langren's map represented an early
                   attempt to systematically catalog and name lunar features,
                   contributing to the broader understanding of the Moon's
                   surface characteristics. It also demonstrated the growing
                   interest in observing and mapping celestial bodies during the
                   17th century.
-                  <br /><br />
+                  <br ><br >
                   It's worth noting that Langren's work was overshadowed by the
                   more detailed and accurate lunar maps created by later
                   astronomers, such as Johannes Hevelius and Giovanni Riccioli,
@@ -679,12 +679,12 @@
             </div>
             <div class="timeline-details-box-wrapper">
               <div class="timeline-details-box glass-container-medium">
-                <h2
+                <h3
                   class="accordian-button transparent-button paragraph-font font-medium"
                 >
                   <span class="fa-solid fa-plus"></span>
                   Moon Proved to Have No Atmostphere
-                </h2>
+                </h3>
                 <p class="paragraph-font font-paragraph hidden">
                   Roger Joseph Boscovich, a polymath of Croatian descent, made
                   significant contributions to various fields of science,
@@ -692,16 +692,16 @@
                   of his notable achievements was his work on the absence of an
                   atmosphere on the Moon, which he concluded in the mid-18th
                   century.
-                  <br /><br />
+                  <br ><br >
                   In 1753, Boscovich published a book titled "Philosophiae
                   Naturalis Theoria Redacta ad Unicam Legem Virium in Natura
                   Existentium" (translated as "Theoria Philosophiae Naturalis"),
                   in which he presented a unified theory of natural philosophy.
                   In this book, Boscovich discussed his observations and
                   reasoning about the Moon's lack of atmosphere.
-                  <br /><br />
+                  <br ><br >
                   Boscovich's reasoning was based on several key points:
-                  <br /><br />
+                  <br ><br >
                   1. Lunar Phases: Boscovich observed the phenomenon of lunar
                   phases, which is the changing appearance of the Moon as viewed
                   from Earth due to the varying angles between the Sun, Earth,
@@ -709,28 +709,28 @@
                   illuminated and dark regions of the Moon's surface indicated
                   the absence of any substantial atmosphere that could cause
                   diffused light or scattering of sunlight.
-                  <br /><br />
+                  <br ><br >
                   2. Lunar Eclipses: Boscovich also considered lunar eclipses,
                   during which the Earth comes directly between the Sun and the
                   Moon, causing the Moon to temporarily disappear from view. He
                   noted that the Moon's disappearance was abrupt and without any
                   visible distortion or fading, which suggested that there was
                   no atmosphere to refract or scatter sunlight around the Moon.
-                  <br /><br />
+                  <br ><br >
                   3. Stars through the Moon: Boscovich made observations of
                   stars that passed behind the Moon's dark limb (the
                   unilluminated portion). He found that the stars remained
                   visible without any apparent dimming or distortion, further
                   supporting his conclusion that the Moon lacked an atmosphere
                   that could cause such effects.
-                  <br /><br />
+                  <br ><br >
                   Boscovich's observations and reasoning were in line with the
                   broader scientific understanding of his time, which was moving
                   towards a more empirical and observational approach. His work
                   on the Moon's lack of atmosphere contributed to the
                   understanding of lunar characteristics and the differentiation
                   between the Moon and Earth's atmospheric properties.
-                  <br /><br />
+                  <br ><br >
                   It's important to note that Boscovich's conclusion about the
                   Moon's lack of atmosphere was not universally accepted at the
                   time, as the available telescopic technology was still
@@ -749,13 +749,13 @@
             </div>
             <div class="timeline-details-box-wrapper">
               <div class="timeline-details-box glass-container-medium">
-                <h2
+                <h3
                   class="accordian-button transparent-button paragraph-font font-medium"
                 >
                   <span class="fa-solid fa-plus"></span>
                   Franz von Gruithuisen Proposed Craters Are Formed By Meteor
                   strikes.
-                </h2>
+                </h3>
                 <p class="paragraph-font font-paragraph hidden">
                   Franz von Gruithuisen was a German astronomer and physician
                   who made significant contributions to the field of lunar
@@ -764,36 +764,36 @@
                   formed by impacts from meteorites or celestial bodies, a
                   concept that laid the groundwork for the modern understanding
                   of lunar cratering.
-                  <br /><br />
+                  <br ><br >
                   In 1824, Gruithuisen published a paper titled "Sur la cause
                   des Cavités circulaires, remplies de Montagnes centrales, qui
                   se trouvent dans la Région orientale de la Lune" (translated
                   as "On the Cause of Circular Cavities with Central Mountains
                   Found in the Eastern Region of the Moon"), in which he
                   presented his ideas about lunar craters.
-                  <br /><br />
+                  <br ><br >
                   Gruithuisen's key contributions and hypotheses were as
                   follows:
-                  <br /><br />
+                  <br ><br >
                   1. Impact Hypothesis**: Gruithuisen proposed that the circular
                   formations on the Moon's surface, which we now know as
                   craters, were created by the impact of meteorites or other
                   celestial bodies colliding with the Moon. This idea was
                   groundbreaking at the time, as prevailing theories suggested
                   volcanic origins for these features.
-                  <br /><br />
+                  <br ><br >
                   2. Central Peaks**: Gruithuisen also noted that many craters
                   had central peaks, suggesting that the impact that formed the
                   crater had rebounded and uplifted the center. This observation
                   added support to his impact hypothesis, as volcanic craters
                   typically did not exhibit this central peak feature.
-                  <br /><br />
+                  <br ><br >
                   3. Mountain Ring Theory**: In some of his works, Gruithuisen
                   proposed a "mountain ring theory" to explain the formation of
                   circular mountain ranges on the Moon's surface. He suggested
                   that the circular mountain ranges might result from the
                   outward splattering of material following a meteor impact.
-                  <br /><br />
+                  <br ><br >
                   Gruithuisen's impact hypothesis faced some criticism and
                   skepticism from his contemporaries, as the concept of meteor
                   impacts was not widely accepted during his time. However, his
@@ -801,14 +801,14 @@
                   impact cratering as a fundamental process in shaping planetary
                   surfaces, not just on the Moon but also on other celestial
                   bodies.
-                  <br /><br />
+                  <br ><br >
                   Despite the initial resistance, Gruithuisen's work influenced
                   later generations of astronomers and scientists who continued
                   to study the Moon and planetary surfaces. Over time, as
                   telescopes improved and scientific understanding advanced, the
                   evidence for impact cratering became stronger, leading to the
                   broader acceptance of his ideas.
-                  <br /><br />
+                  <br ><br >
                   Today, we know that lunar craters are indeed the result of
                   impacts from meteoroids, asteroids, and other space debris,
                   and the study of impact craters has provided valuable insights
@@ -825,12 +825,12 @@
             </div>
             <div class="timeline-details-box-wrapper">
               <div class="timeline-details-box glass-container-medium">
-                <h2
+                <h3
                   class="accordian-button transparent-button paragraph-font font-medium"
                 >
                   <span class="fa-solid fa-plus"></span> Robert Goddard Suggests
                   Sending Rockets to the Moon
-                </h2>
+                </h3>
                 <p class="paragraph-font font-paragraph hidden">
                   Robert H. Goddard, an American physicist and engineer, is
                   often regarded as one of the pioneers of modern rocketry. In
@@ -838,9 +838,9 @@
                   Extreme Altitudes," in which he laid out his ideas and
                   calculations for using rockets to reach high altitudes,
                   including the possibility of sending a rocket to the Moon.
-                  <br /><br />
+                  <br ><br >
                   Key points from Goddard's 1920 paper:
-                  <br /><br />
+                  <br ><br >
                   1. Propulsion Principles**: Goddard's paper explored the basic
                   principles of rocket propulsion, including the concept that
                   rockets could operate in a vacuum, where there is no
@@ -848,47 +848,47 @@
                   rocket could function by expelling propellant gases at high
                   speeds in one direction, causing the rocket to move in the
                   opposite direction.
-                  <br /><br />
+                  <br ><br >
                   2. Moon Rocket Proposal**: In his paper, Goddard suggested
                   that with sufficiently powerful rockets, it might be possible
                   to send a spacecraft to the Moon. He proposed a hypothetical
                   scenario in which a rocket could reach the Moon in about two
                   and a half days, carrying a small payload.
-                  <br /><br />
+                  <br ><br >
                   3. Challenges and Calculations**: Goddard's paper discussed
                   the technical challenges of achieving high altitudes and space
                   travel using rockets. He included calculations related to
                   thrust, mass ratios, and velocity, indicating his
                   understanding of the fundamental principles of rocketry.
-                  <br /><br />
+                  <br ><br >
                   Goddard's work was ahead of its time and laid the groundwork
                   for the development of space travel. His ideas were met with
                   skepticism and criticism, but he continued his research and
                   experiments throughout the 1920s and 1930s. In 1926, he
                   successfully launched the world's first liquid-fueled rocket,
                   demonstrating the feasibility of his concepts.
-                  <br /><br />
+                  <br ><br >
                   Goddard's contributions to rocketry and space exploration
                   extended beyond theory:
-                  <br /><br />
+                  <br ><br >
                   1. Liquid-Fueled Rocket: As mentioned, Goddard built and
                   successfully launched the first liquid-fueled rocket in 1926.
                   This was a significant milestone, as liquid propellants
                   offered more control and efficiency compared to solid
                   propellants.
-                  <br /><br />
+                  <br ><br >
                   2. Patents and Innovations: Goddard received patents for
                   various rocket-related inventions, including the use of
                   multistage rockets, gyroscopic stabilization, and nozzle
                   designs.
-                  <br /><br />
+                  <br ><br >
                   3. Legacy: Goddard's work inspired others in the field of
                   rocketry, including scientists like Konstantin Tsiolkovsky in
                   Russia and Wernher von Braun in Germany. His contributions
                   ultimately laid the foundation for the development of the V-2
                   rocket during World War II and the subsequent space programs
                   of various nations.
-                  <br /><br />
+                  <br ><br >
                   While his work wasn't fully recognized during his lifetime,
                   Robert Goddard's ideas and innovations played a pivotal role
                   in shaping the field of rocket science and paving the way for
@@ -906,12 +906,12 @@
             </div>
             <div class="timeline-details-box-wrapper">
               <div class="timeline-details-box glass-container-medium">
-                <h2
+                <h3
                   class="accordian-button transparent-button paragraph-font font-medium"
                 >
                   <span class="fa-solid fa-plus"></span> Soviet Spacecraft Luna
                   2 Becomes First to Reach the Moon
-                </h2>
+                </h3>
                 <p class="paragraph-font font-paragraph hidden">
                   Luna 2, also known as Lunik 2, was a Soviet spacecraft that
                   achieved a historic milestone by becoming the first human-made
@@ -920,20 +920,20 @@
                   Soviet Academy of Sciences), Luna 2 was part of the Luna
                   program, which aimed to explore the Moon through a series of
                   robotic missions.
-                  <br /><br />
+                  <br ><br >
                   Key details about the Luna 2 mission:
-                  <br /><br />
+                  <br ><br >
                   1. Objective: The primary goal of Luna 2 was to impact the
                   Moon's surface and gather data during its descent to further
                   the understanding of the Moon's properties and space
                   conditions.
-                  <br /><br />
+                  <br ><br >
                   2. Design: Luna 2 was a spherical spacecraft with a diameter
                   of about 39 inches (1 meter) and a total mass of around 390
                   kilograms. It was equipped with scientific instruments to
                   measure cosmic rays, solar wind, and magnetic fields during
                   its journey.
-                  <br /><br />
+                  <br ><br >
                   3. Trajectory and Impact: Luna 2 was launched atop a Luna
                   rocket from the Baikonur Cosmodrome in Kazakhstan. The
                   spacecraft followed a trajectory that led it to the Moon, and
@@ -941,26 +941,26 @@
                   surface near the Moon's Aristides, a region on the far side of
                   the Moon. The impact occurred at a velocity of about 3.3
                   kilometers per second.
-                  <br /><br />
+                  <br ><br >
                   4. Achievement and Impact: The successful impact of Luna 2 on
                   the Moon was a historic achievement, marking the first time
                   that a human-made object had reached another celestial body.
                   It demonstrated the capability of reaching and impacting
                   distant targets in space and laid the groundwork for future
                   lunar exploration missions.
-                  <br /><br />
+                  <br ><br >
                   5. Scientific Contributions: Although the spacecraft itself
                   was destroyed upon impact, Luna 2 provided valuable data
                   during its descent. The measurements it collected helped
                   scientists gain insights into the Moon's radiation
                   environment, magnetic fields, and the behavior of charged
                   particles in space.
-                  <br /><br />
+                  <br ><br >
                   6. Follow-up Missions: Luna 2 paved the way for subsequent
                   missions in the Luna program, including spacecraft that
                   performed soft landings on the Moon and sent back images and
                   data from the lunar surface.
-                  <br /><br />
+                  <br ><br >
                   Luna 2's successful mission had a significant impact on the
                   space exploration landscape. It not only demonstrated the
                   Soviet Union's technological capabilities but also marked a
@@ -980,12 +980,12 @@
             </div>
             <div class="timeline-details-box-wrapper">
               <div class="timeline-details-box glass-container-medium">
-                <h2
+                <h3
                   class="accordian-button transparent-button paragraph-font font-medium"
                 >
                   <span class="fa-solid fa-plus"></span> President John F.
                   Kennedy Proposes Manned Lunar Program
-                </h2>
+                </h3>
                 <p class="paragraph-font font-paragraph hidden">
                   In 1961, President John F. Kennedy proposed what would become
                   one of the most iconic and ambitious space exploration
@@ -993,9 +993,9 @@
                   man on the Moon and bringing him safely back to Earth.
                   Kennedy's vision was articulated in a speech before a joint
                   session of the United States Congress on May 25, 1961.
-                  <br /><br />
+                  <br ><br >
                   Key points about President Kennedy's proposal:
-                  <br /><br />
+                  <br ><br >
                   1. Context: The early 1960s marked the height of the Cold War
                   between the United States and the Soviet Union. The Soviet
                   Union had achieved significant milestones in space
@@ -1004,20 +1004,20 @@
                   Yuri Gagarin, into space in 1961. These accomplishments raised
                   concerns in the United States about its technological and
                   strategic standing.
-                  <br /><br />
+                  <br ><br >
                   2. Setting a Goal: In his speech, Kennedy set forth a clear
                   and audacious goal: to send an American astronaut to the Moon
                   and return them safely to Earth before the end of the decade.
                   He declared, "I believe that this nation should commit itself
                   to achieving the goal, before this decade is out, of landing a
                   man on the Moon and returning him safely to the Earth."
-                  <br /><br />
+                  <br ><br >
                   3. National Prestige and Leadership: Kennedy emphasized the
                   importance of American leadership in space exploration,
                   framing the Moon landing as a symbolic achievement that would
                   demonstrate the nation's technological and scientific prowess
                   to the world.
-                  <br /><br />
+                  <br ><br >
                   4. Challenges and Benefits: Kennedy acknowledged the
                   challenges of the endeavor, recognizing that it would require
                   significant resources, effort, and collaboration between
@@ -1025,13 +1025,13 @@
                   private industry. He also highlighted the potential benefits
                   of space exploration in terms of technological innovation and
                   national unity.
-                  <br /><br />
+                  <br ><br >
                   5. Commitment to Exploration: Kennedy's proposal marked a
                   decisive commitment to the pursuit of human spaceflight and
                   lunar exploration. The space program that followed came to be
                   known as the Apollo program, with Apollo 11 eventually
                   achieving the Moon landing goal in 1969.
-                  <br /><br />
+                  <br ><br >
                   6. Legacy: President Kennedy's vision and commitment to space
                   exploration had a lasting impact on American society, culture,
                   and scientific advancement. The Apollo program not only
@@ -1039,7 +1039,7 @@
                   to significant technological breakthroughs and the development
                   of a broad range of innovations with applications far beyond
                   space travel.
-                  <br /><br />
+                  <br ><br >
                   On July 20, 1969, less than eight years after Kennedy's
                   proposal, NASA's Apollo 11 mission successfully landed
                   astronauts Neil Armstrong and Edwin "Buzz" Aldrin on the Moon,
@@ -1058,7 +1058,7 @@
     <!-- Information Section -->
     <section class="flex-center" id="info-section">
       <div class="section-content-wrapper">
-        <h1 class="display-font font-large">Interesting Information</h1>
+        <h2 class="display-font font-large">Interesting Information</h2>
         <div class="mobile-only flex-center" id="swipe-container">
           <iframe
             id="swipe-lottie"
@@ -1069,9 +1069,9 @@
         </div>
         <div class="gallery glass-container-medium">
           <div class="gallery-cell">
-            <h2 class="paragraph-font font-medium">
+            <h3 class="paragraph-font font-medium">
               The Moon began with an explosive collision
-            </h2>
+            </h3>
             <p class="paragraph-font font-paragraph">
               “The prevailing idea is that the Moon was formed in a violent
               event between the proto-Earth – an early-stage Earth that was much
@@ -1087,9 +1087,9 @@
             </p>
           </div>
           <div class="gallery-cell">
-            <h2 class="paragraph-font font-medium">
+            <h3 class="paragraph-font font-medium">
               The Moon is drifting away
-            </h2>
+            </h3>
             <p class="paragraph-font font-paragraph">
               The Moon is engaged in a subtle dance with our planet that goes
               largely unnoticed. Scientific observations reveal that this
@@ -1109,9 +1109,9 @@
             </p>
           </div>
           <div class="gallery-cell">
-            <h2 class="paragraph-font font-medium">
+            <h3 class="paragraph-font font-medium">
               The Moon and The Sun are not the same size
-            </h2>
+            </h3>
             <p class="paragraph-font font-paragraph">
               The celestial spectacle of a total solar eclipse often leaves us
               in awe as we witness the seemingly perfect alignment of the Sun
@@ -1141,7 +1141,7 @@
 
     <section class="flex-center" id="quiz-section">
       <div class="section-content-wrapper">
-        <h1 class="display-font font-large">Take the quiz</h1>
+        <h2 class="display-font font-large">Take the quiz</h2>
         <form
           class="glass-container-medium"
           action="https://formdump.codeinstitute.net"
@@ -1161,7 +1161,7 @@
             id="question-one"
             list="question-one-datalist"
             class="paragraph-font font-paragraph"
-          />
+          >
           <datalist id="question-one-datalist">
             <option value="selene">Selene</option>
             <option value="persephone">Persephone</option>
@@ -1181,7 +1181,7 @@
               value="Ra"
               id="question-two-op-one"
               class="paragraph-font font-paragraph"
-            />
+            >
             <label
               for="question-two-op-one"
               class="paragraph-font font-paragraph"
@@ -1195,7 +1195,7 @@
               value="Isis"
               id="question-two-op-two"
               class="paragraph-font font-paragraph"
-            />
+            >
             <label
               for="question-two-op-two"
               class="paragraph-font font-paragraph"
@@ -1209,7 +1209,7 @@
               value="Khonsu"
               id="question-two-op-three"
               class="paragraph-font font-paragraph"
-            />
+            >
             <label
               for="question-two-op-three"
               class="paragraph-font font-paragraph"
@@ -1229,7 +1229,7 @@
               value="Apollo 7"
               id="question-three-op-one"
               class="paragraph-font font-paragraph"
-            />
+            >
             <label
               for="question-three-op-one"
               class="paragraph-font font-paragraph"
@@ -1243,7 +1243,7 @@
               value="Apollo 9"
               id="question-three-op-two"
               class="paragraph-font font-paragraph"
-            />
+            >
             <label
               for="question-three-op-two"
               class="paragraph-font font-paragraph"
@@ -1257,7 +1257,7 @@
               value="Apollo 11"
               id="question-three-op-three"
               class="paragraph-font font-paragraph"
-            />
+            >
             <label
               for="question-three-op-three"
               class="paragraph-font font-paragraph"
@@ -1271,7 +1271,7 @@
               value="Apollo 14"
               id="question-three-op-four"
               class="paragraph-font font-paragraph"
-            />
+            >
             <label
               for="question-three-op-four"
               class="paragraph-font font-paragraph"
@@ -1288,7 +1288,7 @@
             name="question-four"
             id="question-four"
             class="paragraph-font font-paragraph"
-          />
+          >
 
           <!-- Email Question -->
           <label
@@ -1302,7 +1302,7 @@
             id="question-email"
             class="paragraph-font font-paragraph"
             required
-          />
+          >
 
           <!-- Newsletter Question -->
           <div class="question-option-wrapper quiz-question">
@@ -1312,7 +1312,7 @@
               value="subscribe"
               id="question-subscribe"
               class="paragraph-font font-paragraph"
-            />
+            >
             <label
               for="question-subscribe"
               class="paragraph-font font-paragraph"
@@ -1372,11 +1372,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    >
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
+    >
     <script
       src="https://kit.fontawesome.com/824860f618.js"
       crossorigin="anonymous"
