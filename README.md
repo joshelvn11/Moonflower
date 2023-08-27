@@ -4,7 +4,7 @@
 
 ## Overview
 
-Moonflower is website designed to provide general information, both current and historical, about the Moon to users seeking such information.
+Moonflower is a website designed to provide general information, both current and historical, about the Moon to users seeking such information.
 
 Moonflower provides four distinct types of information for users:
 
@@ -85,6 +85,20 @@ The quiz primary business function is in fact to collecting emails for marketing
 In terms of mobile responsiveness in this section the checkbox and radio buttons are laid out horizontally inline on desktop however stack vertically on a mobile layout.
 
 ![QuizMockup](/assets/misc/mockup-quiz.png "Quiz Mockup")
+
+## Features Left To Implement
+
+There three primary features left to implement as they currently fall out of the scope of time and ability for myself to implement, they are:
+
+### Live Data
+As mentioned to current live data system is currently designed to be manually updated once daily but in future this data will be pulled from an API and updated upon page refresh.
+
+### Saved Preferences
+This refers to the sound and background paricles options. Currently these options are reset on every browser session but in future when a user turns either option on or off this will be saved via means of cookies so the options stay in the same state selected by the user every browser session for the duration of the cookie lifetime.
+
+### Working Quiz
+
+Currently the quiz is submitted to a form dump endpoint but in future this will be sent to a server which will check a users answers and automatically send them their score via email.
 
 ## Testing
 
