@@ -43,11 +43,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--primary-font-color); /* color of the scroll thumb */
-  border-radius: 30px; /* roundness of the scroll thumb */
+  background-color: var(--primary-font-color); 
+  border-radius: 30px; 
 }
 
-/* Firefox */
+/* Firefox  styling */
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--primary-font-color) var(--primary-bg-color);
@@ -72,12 +72,6 @@ body::-webkit-scrollbar-thumb {
 .display-font {
   font-family: var(--display-font);
   text-align: center;
-}
-
-@media screen and (max-width: 622px) {
-  #hero-text-large {
-    font-size: 82px;
-  }
 }
 
 .paragraph-font {
@@ -165,12 +159,20 @@ h3 {
 .section-content-wrapper {
   width: 1200px;
   max-width: 90%;
+  padding: 120px 0px;
   display: flex;
   gap: 36px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 992px) {
+  .section-content-wrapper {
+     padding: 80px 0px;
+  }  
+ 
+} 
 
 .block {
   display: block;
@@ -372,6 +374,8 @@ footer {
 #desktop-nav {
   position: fixed;
   right: 12px;
+  padding: 12px 24px;
+  border-radius: 100px;
 }
 
 nav > a {
@@ -537,7 +541,7 @@ a:hover {
   }
 }
 
-/* ------ Hero Section ----- */
+/* * ------ Hero Section ----- */
 
 #hero-text-container {
   position: sticky;
@@ -565,6 +569,8 @@ a:hover {
   width: 100%;
   font-size: 220px;
 }
+
+
 
 #hero-text-medium {
   width: 100%;
@@ -665,6 +671,9 @@ a:hover {
   grid-template-columns: repeat(5, 1fr);
   width: 800px;
 }
+
+/* Adjust the grid to have fewer columns ans
+smaller overall width on smaller devices */
 
 @media screen and (max-width: 825px) {
   #data-cards-grid {
