@@ -1,6 +1,6 @@
 # Moonflower - Moon Website
 
-![Devices Mockuo](/assets/misc/devices-mockup.png "Moonflower - Devices Mockuo")
+![Devices Mockuo](/assets/misc/devices-mockup.png "Moonflower - Devices Mockup")
 
 ## Overview
 
@@ -14,6 +14,10 @@ Moonflower provides four distinct types of information for users:
 4. Interest - miscellaneous and interesting facts about the mooon
 
 In addition to this it also has a final interactive section of a quiz.
+
+The primary audience for the website are students in a field of study relating to the moon and astronomy, hence the more high level reference in the second section. It is intended to be a useful and visually appealing refernce website to routinely access current live data and reference data.
+
+The secondary audience would be students in a highschool level area of study as source of information for project work and potentially just as website to spark interest and curiosity about the moon.
 
 ## Accessability & Usability
 
@@ -147,6 +151,10 @@ GitHub Pages Website - https://joshelvn11.github.io/Moonflower/
 I then also manually deploy the website to my Linode instance running an OpenLiteSpeed webserver on Ubuntu using Cyberpanel by copying the files from my local machine to the server via SFTP. The application I am currently using for SFTP transfers is PortX available on the Mac App Store.
 
 Linode Site - https://moonflower.ddns.net/
+
+## Known Bugs
+
+There is currenlty one known active whereby the slide container in the Interesting Information section does not automatically adjust to fit the longest piece of content. Currently it has just been set to use a set height to accomdate all information but this is not an ideal solution as it will need to be constantly changes if longer pieces of information are added.
 
 ## Credits
 
