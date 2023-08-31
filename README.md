@@ -1,6 +1,7 @@
 # Moonflower - Moon Website
 
-![Devices Mockuo](/assets/misc/devices-mockup.png "Moonflower - Devices Mockup")
+![Devices Mockup](https://s3.eu-central-1.wasabisys.com/eleven11/moonflower/doc-assets/devices-mockup.png
+ "Moonflower - Devices Mockup")
 
 ## Overview
 
