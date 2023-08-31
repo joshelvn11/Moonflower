@@ -26,7 +26,7 @@ The Moonflower site has multimedia elements to make user experience more interes
 
 ## Design
 
-The design for the website was first created in Figma before starting any development work. The original design file used to start can be found [here.](/assets/misc/design/website-desgin-mockup.png)
+The design for the website was first created in Figma before starting any development work. The original design file used to start can be found [here.](https://s3.eu-central-1.wasabisys.com/eleven11/moonflower/doc-assets/design/website-desgin-mockup.png)
 
 ## Sections & Features
 
@@ -42,8 +42,8 @@ The navigation bar for the website is located in the top right hand corner of th
 
 On mobile the navigation bar changes into a hamburger menu icon that, when clicked, launches a fullscreen menu modal. The menu icon, like in the desktop version, stays in a fixed position so as to be always accesible.
 
-![Desktop Navigation](/assets/misc/desktop-nav.png "Desktop Navigation")
-![Mobile Navigation](/assets/misc/mobile-menu.png "Mobile Navigation")
+![Desktop Navigation](https://s3.eu-central-1.wasabisys.com/eleven11/moonflower/doc-assets/desktop-nav.png "Desktop Navigation")
+![Mobile Navigation](https://s3.eu-central-1.wasabisys.com/eleven11/moonflower/doc-assets/mobile-menu.png "Mobile Navigation")
 
 ### Real Time Information Section
 
@@ -55,7 +55,7 @@ It is designed using a card layout system where each piece of information is giv
 
 Creating this card grid layout also allows this layout to work well and be visually pleasing on a mobile layout as all the card simply stack on top of eacher on mobile.
 
-![Real Time Data Mockup](/assets/misc/mockup-real-time-data.png "Real Time Data Mockup")
+![Real Time Data Mockup](https://s3.eu-central-1.wasabisys.com/eleven11/moonflower/doc-assets/mockup-real-time-data.png "Real Time Data Mockup")
 
 ### Data & Statistics Section
 
@@ -65,7 +65,7 @@ The different categories of data are broken up and each display in their own acc
 
 The data inside the accordians is laid out in table format with each line having alternating colours to make it easier to match the title to it's relevant numerical value.
 
-![Stats Mockup](/assets/misc/mockup-stats-data.png "Stats Mockup")
+![Stats Mockup](https://s3.eu-central-1.wasabisys.com/eleven11/moonflower/doc-assets/mockup-stats-data.png "Stats Mockup")
 
 ### History & Timeline Section
 
@@ -75,7 +75,7 @@ On desktop each event appears on alternating sides of the timeline to make each 
 
 The alternating layout on desktop is created using an nth-of-type CSS function in order to make it very easy to insert new sections anywhere on the timeline and have the correct alternating layout updated automatically across the timeline.
 
-![History Mockup](/assets/misc/mockup-hostory.png "History Mockup")
+![History Mockup](https://s3.eu-central-1.wasabisys.com/eleven11/moonflower/doc-assets/mockup-hostory.png "History Mockup")
 
 ### Interesting Info (Facts) Section
 
@@ -83,7 +83,7 @@ This sections features miscelleanous interesting facts / information about the M
 
 On desktop the slide is navigated through using the arrow buttons on either side of the slider as this is the most common standard for a slide layout. However on mobile, where there isn't enought space to effectively place these buttons the slider is navigated by a touch swiping gesture. As this isn't necessarily obvious a simple lottie animation is displayed just above the slides along with text showing and saying to swipe to scroll through the slides.
 
-![Info Mockup](/assets/misc/mockup-info.png "Info Mockup")
+![Info Mockup](https://s3.eu-central-1.wasabisys.com/eleven11/moonflower/doc-assets/mockup-info.png "Info Mockup")
 
 ### Quiz Section
 
@@ -93,7 +93,7 @@ The quiz primary business function is in fact to collecting emails for marketing
 
 In terms of mobile responsiveness in this section the checkbox and radio buttons are laid out horizontally inline on desktop however stack vertically on a mobile layout.
 
-![QuizMockup](/assets/misc/mockup-quiz.png "Quiz Mockup")
+![QuizMockup](https://s3.eu-central-1.wasabisys.com/eleven11/moonflower/doc-assets/mockup-quiz.png "Quiz Mockup")
 
 ## Features Left To Implement
 
@@ -115,7 +115,7 @@ Currently the quiz is submitted to a form dump endpoint but in future this will 
 
 Lighthouse test was conducted with the following results:
 
-![Lighthouse Results](/assets/misc/lighthouse-results.png "Lighthouse Results")
+![Lighthouse Results](https://s3.eu-central-1.wasabisys.com/eleven11/moonflower/doc-assets/lighthouse-results.png "Lighthouse Results")
 
 ### Browser Compatability Testing
 
