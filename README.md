@@ -1,6 +1,6 @@
 # Moonflower - Moon Website
 
-![Devices Mockuo](/assets/misc/Devices%20Mockup.png "Moonflower - Devices Mockuo")
+![Devices Mockuo](/assets/misc/devices-mockup.png "Moonflower - Devices Mockuo")
 
 ## Overview
 
@@ -18,6 +18,10 @@ In addition to this it also has a final interactive section of a quiz.
 ## Accessability & Usability
 
 The Moonflower site has multimedia elements to make user experience more interesting and engaging, including background video and sound. This has the potential to deacrease accessability for some audiences as well as decrease usuability for some as well, in order to prevent and mitigate this the site has options before enterting to turn it into high-contrast mode (removing background media) and enabling or disabling the ambient background sounds.
+
+## Design
+
+The design for the website was first created in Figma before starting any development work. The original design file used to start can be found [here.](/assets/misc/design/website-desgin-mockup.png)
 
 ## Sections & Features
 
@@ -198,3 +202,7 @@ Other Icons -
 ### Images
 
 Moon Image - https://pngfre.com/moon-png/moon-52/
+
+### Music
+
+Voyager - Johnny Easton (Royalty Free) - https://www.youtube.com/watch?v=HKinw3NqWFQ

@@ -415,9 +415,6 @@ nav > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
 }
 
 #mobile-nav {
@@ -487,7 +484,6 @@ a:hover {
 
 #background-section {
   background-color: var(--primary-bg-color);
-  /*background-image: url(assets/media/images/stars-background-2.jpg);*/
   background-size: cover;
   position: fixed;
   z-index: -2;
@@ -496,7 +492,6 @@ a:hover {
 
 #particles-js {
   background-color: rgba(0, 0, 0, 0);
-  /*background-image: url(assets/media/images/stars-background-2.jpg);*/
   background-size: cover;
   position: fixed;
   z-index: -1;
