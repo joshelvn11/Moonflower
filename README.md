@@ -156,6 +156,8 @@ Linode Site - https://moonflower.ddns.net/
 
 There is currenlty one known active whereby the slide container in the Interesting Information section does not automatically adjust to fit the longest piece of content. Currently it has just been set to use a set height to accomdate all information but this is not an ideal solution as it will need to be constantly changes if longer pieces of information are added.
 
+There is one additonal problem, this is not necessarily a bug a with any of the code, but the background audio does not play on the GitHub pages deployment, however it works on all other instances of the website.
+
 ## Credits
 
 ### Content
