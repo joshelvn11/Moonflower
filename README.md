@@ -22,7 +22,7 @@ The secondary audience would be students in a highschool level area of study as 
 
 ## Accessability & Usability
 
-The Moonflower site has multimedia elements to make user experience more interesting and engaging, including background video and sound. This has the potential to deacrease accessability for some audiences as well as decrease usuability for some as well, in order to prevent and mitigate this the site has options before enterting to turn it into high-contrast mode (removing background media) and enabling or disabling the ambient background sounds.
+The Moonflower site has multimedia elements to make user experience more interesting and engaging, including background video and sound. This has the potential to deacrease accessability for some audiences as well as decrease usuability for some as well, in order to prevent and mitigate this the site has options before enterting to enable/disable the background particles and enable/disable the ambient background sounds.
 
 ## Design
 
@@ -32,7 +32,7 @@ The design for the website was first created in Figma before starting any develo
 
 ### Preloader
 
-As I have used a few assets that are bit larger size as well as external assets the website may take slightly longer to load, primarily for users with slower internet connection. In order to inform users the website is working correctly while it loads, so as they do not navigate away while it loads thinking it is broken, I have implemented a preloader to accomplish this.
+As I have used a few assets that are bit larger size as well as external assets the website may take slightly longer to load, primarily for users with slower internet connections. In order to inform users the website is working correctly while it loads, so as they do not navigate away while it loads thinking it is broken, I have implemented a preloader to accomplish this.
 
 The preloader is a simple css animation meant to show the Sun, Earth and Moon orbiting each other. The preloader disapears on full page load.
 
@@ -156,8 +156,6 @@ Linode Site - https://moonflower.ddns.net/
 ## Known Bugs
 
 There is currenlty one known active whereby the slide container in the Interesting Information section does not automatically adjust to fit the longest piece of content. Currently it has just been set to use a set height to accomdate all information but this is not an ideal solution as it will need to be constantly changes if longer pieces of information are added.
-
-There is one additonal problem, this is not necessarily a bug a with any of the code, but the background audio does not play on the GitHub pages deployment, however it works on all other instances of the website.
 
 ## Credits
 
