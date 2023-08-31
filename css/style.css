@@ -33,6 +33,7 @@
 }
 
 /* ----- Scroll Bar Styling ----- */
+/* https://www.digitalocean.com/community/tutorials/css-scrollbars */
 
 body::-webkit-scrollbar {
   width: 6px; /* width of the entire scrollbar */
